@@ -1,0 +1,30 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#FirstSection {
+  background: rgb(36, 9, 53);
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+}
+
+#SecondSection {
+  background: rgb(0, 0, 0);
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+}
+
+#ThirdSection {
+  background: rgb(36, 9, 53);
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=Sections.css.map */

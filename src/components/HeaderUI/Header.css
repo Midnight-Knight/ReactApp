@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 12vmin;
+  padding: 2vmin 8vmin;
+  background: rgba(32, 33, 79, 0.5);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: none;
+  z-index: 10;
+  transition: 0.5s transform;
+}
+header > img {
+  width: 8vmin;
+  height: 8vmin;
+  transition: 1s transform;
+}
+header > img:hover {
+  transform: scale(1.2);
+}
+header > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/*# sourceMappingURL=Header.css.map */

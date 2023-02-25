@@ -1,0 +1,29 @@
+@import "./../../style/Color_and_mixin";
+
+header
+{
+  @include FlexRowSbCe();
+  position: fixed;
+  width: 100%;
+  height: 12vmin;
+  padding: 2vmin 8vmin;
+  background: $Ultramarine_BlueA;
+  @include blur(6px);
+  box-shadow: none;
+  z-index: 10;
+  transition: 0.5s transform;
+  > img
+  {
+    width: 8vmin;
+    height: 8vmin;
+    transition: 1s transform;
+  }
+  > img:hover
+  {
+    transform: scale(1.2);
+  }
+  > div
+  {
+    @include FlexRowFeCe();
+  }
+}
