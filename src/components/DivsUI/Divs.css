@@ -1,0 +1,148 @@
+@keyframes start {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(0vw);
+  }
+}
+#Name {
+  width: 80vw;
+  height: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 24px;
+  transition: 1s box-shadow;
+  animation: start 1.75s 1;
+}
+#Name > div:nth-child(1) {
+  background: rgb(32, 33, 79);
+  width: 45vw;
+  height: 35vw;
+  padding: 2.5% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: 1s background;
+}
+#Name > div:nth-child(1) * {
+  color: rgb(255, 255, 255);
+}
+#Name > div:nth-child(1) > div {
+  width: 100%;
+}
+#Name > div:nth-child(1) > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#Name > div:nth-child(1) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#Name > div:nth-child(1) > div:nth-child(2) li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  list-style-type: none;
+  height: 3vmin;
+  margin: 1vmin 0;
+}
+#Name > div:nth-child(1) > div:nth-child(2) li:before {
+  display: inline-block;
+  content: "";
+  position: relative;
+  width: 3vmin;
+  height: 3vmin;
+  background-size: cover;
+  background-position: center;
+  margin-right: 1vmin;
+}
+#Name > div:nth-child(1) > div:nth-child(2) li:nth-child(1):before {
+  background-image: url("./../../Image/gmail.png");
+}
+#Name > div:nth-child(1) > div:nth-child(2) li:nth-child(2):before {
+  background-image: url("./../../Image/yandex.png");
+}
+#Name > div:nth-child(1) > div:nth-child(2) li:nth-child(3):before {
+  background-image: url("./../../Image/telephone.png");
+}
+#Name > div:nth-child(1) > div:nth-child(2) li:nth-child(4):before {
+  background-image: url("./../../Image/home.png");
+}
+#Name > div:nth-child(1) > div:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 4vw;
+}
+#Name > div:nth-child(1) > div:nth-child(3) > a {
+  width: 4vw;
+  height: 4vw;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4vw;
+  margin: 2vw;
+}
+#Name > div:nth-child(1) > div:nth-child(3) > a:nth-child(1) {
+  margin-left: 0;
+}
+#Name > div:nth-child(1) > div:nth-child(3) > #TG {
+  background-image: url("./../../Image/github.png");
+}
+#Name > div:nth-child(1) > div:nth-child(3) > #GH {
+  background-image: url("./../../Image/telegram.png");
+}
+#Name > div:nth-child(1) > div:nth-child(3) > #VK {
+  background-image: url("./../../Image/discord.png");
+}
+#Name > div:nth-child(1) > div:nth-child(3) > #DC {
+  background-image: url("./../../Image/vk.png");
+}
+#Name > div:nth-child(2) {
+  width: 35vw;
+  height: 35vw;
+  background-image: url("./../../Image/DogTwitter.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+#Name > div:nth-child(2) > div {
+  width: 15vw;
+  height: 35vw;
+  position: absolute;
+}
+#Name > div:nth-child(2) > div:nth-child(1) {
+  background: linear-gradient(to right top, rgb(32, 33, 79) 50%, rgba(0, 0, 0, 0) 50%);
+  z-index: 2;
+}
+#Name > div:nth-child(2) > div:nth-child(2) {
+  background: linear-gradient(to right top, rgb(123, 104, 238) 50%, rgba(0, 0, 0, 0) 50%);
+  z-index: 3;
+  opacity: 0;
+  transition: 1s opacity;
+}
+
+#Name:hover {
+  box-shadow: 0 0 16px 16px rgba(123, 104, 238, 0.5);
+}
+#Name:hover > div:nth-child(1) {
+  background: rgb(123, 104, 238);
+}
+#Name:hover > div:nth-child(2) > div:nth-child(2) {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=Divs.css.map */

@@ -1,0 +1,160 @@
+@import "./../../style/Color_and_mixin";
+
+@keyframes start {
+  from
+  {
+    transform: translateX(-100vw);
+  }
+  to
+  {
+    transform: translateX(0vw);
+  }
+
+}
+
+#Name
+{
+  width: 80vw;
+  height: 35vw;
+  @include FlexRowSbCe();
+  overflow: hidden;
+  border-radius: 24px;
+  transition: 1s box-shadow;
+  animation: start 1.75s 1;
+  > div:nth-child(1)
+  {
+    background: $Ultramarine_Blue;
+    width: 45vw;
+    height: 35vw;
+    padding: 2.5% 5%;
+    @include FlexColumnSbFs();
+    transition: 1s background;
+    *
+    {
+      color: $White;
+    }
+    > div
+    {
+      width: 100%;
+    }
+    > div:nth-child(1)
+    {
+      @include FlexColumnFsFs();
+    }
+    > div:nth-child(2)
+    {
+      @include FlexColumnCeFs();
+      li
+      {
+        @include FlexRowCeFs();
+        list-style-type: none;
+        height: 3vmin;
+        margin: 1vmin 0;
+      }
+      li:before
+      {
+        display: inline-block;
+        content: "";
+        position: relative;
+        width: 3vmin;
+        height: 3vmin;
+        background-size: cover;
+        background-position: center;
+        margin-right: 1vmin;
+      }
+      li:nth-child(1):before
+      {
+        background-image: url("./../../Image/gmail.png");
+      }
+      li:nth-child(2):before
+      {
+        background-image: url("./../../Image/yandex.png");
+      }
+      li:nth-child(3):before
+      {
+        background-image: url("./../../Image/telephone.png");
+      }
+      li:nth-child(4):before
+      {
+        background-image: url("./../../Image/home.png");
+      }
+    }
+    > div:nth-child(3)
+    {
+      @include FlexRowFsCe();
+      height: 4vw;
+      > a
+      {
+        width: 4vw;
+        height: 4vw;
+        background-size: cover;
+        background-position: center;
+        border-radius: 4vw;
+        margin: 2vw;
+      }
+      > a:nth-child(1)
+      {
+        margin-left: 0;
+      }
+      > #TG
+      {
+        background-image: url("./../../Image/github.png");
+      }
+      > #GH
+      {
+        background-image: url("./../../Image/telegram.png");
+      }
+      > #VK
+      {
+        background-image: url("./../../Image/discord.png");
+      }
+      > #DC
+      {
+        background-image: url("./../../Image/vk.png");
+      }
+    }
+  }
+  > div:nth-child(2)
+  {
+    width: 35vw;
+    height: 35vw;
+    background-image: url("./../../Image/DogTwitter.jpg");
+    background-size: cover;
+    background-position: center;
+    @include FlexRowFsCe();
+    > div
+    {
+      width: 15vw;
+      height: 35vw;
+      position: absolute;
+    }
+    > div:nth-child(1)
+    {
+      background: linear-gradient(to right top, $Ultramarine_Blue 50%, rgba(0,0,0,0) 50%);
+      z-index: 2;
+    }
+    > div:nth-child(2)
+    {
+      background: linear-gradient(to right top, $Moderate_slate_blue 50%, rgba(0,0,0,0) 50%);
+      z-index: 3;
+      opacity: 0;
+      transition: 1s opacity;
+    }
+  }
+}
+
+#Name:hover
+{
+  box-shadow: 0 0 16px 16px $Moderate_slate_blueA;
+  > div:nth-child(1)
+  {
+    background: $Moderate_slate_blue;
+  }
+  > div:nth-child(2)
+  {
+    > div:nth-child(2)
+    {
+      opacity: 1;
+    }
+  }
+}

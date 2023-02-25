@@ -1,12 +1,13 @@
 import React from "react";
 import "./Sections.css";
+import {DivName} from "../DivsUI/Divs";
 
 
 
 export const FirstSection = () => {
     return (
         <section id="FirstSection">
-
+            <DivName/>
         </section>
     )
 }

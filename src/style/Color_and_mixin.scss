@@ -9,6 +9,22 @@ $BlackA: rgba(0,0,0,0.5);
 $White: rgb(255,255,255);
 $WhiteA: rgba(255,255,255,0.5);
 
+@mixin FlexRowCeFs()
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@mixin FlexRowFsCe()
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 @mixin FlexRowCeCe()
 {
   display: flex;
@@ -39,6 +55,30 @@ $WhiteA: rgba(255,255,255,0.5);
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@mixin FlexColumnFsFs()
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@mixin FlexColumnCeFs()
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@mixin FlexColumnSbFs()
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 @mixin blur($blur_px: 0px)
