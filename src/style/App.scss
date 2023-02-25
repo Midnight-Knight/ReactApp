@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 3vmin;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  font-family: "Arial Black";
+}
+
+h1
+{
+  font-size: 5.5vmin;
+}
+
+h2
+{
+  font-size: 5vmin;
+}
+
+h3
+{
+  font-size: 4.5vmin;
+}
+
+h4
+{
+  font-size: 4vmin;
+}
+
+h5
+{
+  font-size: 3.5vmin;
+}
+
+h6
+{
+  font-size: 3vmin;
+}
+
+button, button:active, button:focus {
+  border: none;
+}
+
+@import "Color_and_mixin";
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: $Deep_purple-black;
+  overflow: hidden;
+  min-width: 600px;
+}
