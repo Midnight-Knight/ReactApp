@@ -8,21 +8,18 @@ section {
 
 #FirstSection {
   background: rgb(36, 9, 53);
-  padding: 20px;
   width: 100vw;
   height: 100vh;
 }
 
 #SecondSection {
   background: rgb(0, 0, 0);
-  padding: 20px;
   width: 100vw;
-  height: 100vh;
+  height: 82vw;
 }
 
 #ThirdSection {
   background: rgb(36, 9, 53);
-  padding: 20px;
   width: 100vw;
   height: 100vh;
 }

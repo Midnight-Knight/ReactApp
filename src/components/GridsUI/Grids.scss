@@ -1,0 +1,87 @@
+@import "./../../style/Color_and_mixin";
+
+#GridTechnologies
+{
+  width: 90vw;
+  height: 71.625vw;
+  display: grid;
+  justify-content: space-between;
+  align-content: space-between;
+  grid-template-columns: repeat(5, 16.5vw);
+  grid-template-rows: repeat(4, 16.5vw);
+  grid-template-areas: "js js html ts ts"
+                      "js js css ts ts"
+                      "sass sass react figma git"
+                      "cpp py android java java";
+  > div
+  {
+    background-position: center;
+    background-size: cover;
+    opacity: 0.35;
+    transition: 1s opacity;
+  }
+  > div:hover
+  {
+    opacity: 1;
+  }
+  > #html
+  {
+    grid-area: html;
+    background-image: url("./../../Image/html-5.png");
+  }
+  > #css
+  {
+    grid-area: css;
+    background-image: url("./../../Image/css-3.png");
+  }
+  > #js
+  {
+    grid-area: js;
+    background-image: url("./../../Image/js.jpeg");
+  }
+  > #ts
+  {
+    grid-area: ts;
+    background-image: url("./../../Image/TS.jpg");
+  }
+  > #sass
+  {
+    grid-area: sass;
+    background-image: url("./../../Image/sass.jpg");
+  }
+  > #react
+  {
+    grid-area: react;
+    background-image: url("./../../Image/react.png");
+  }
+  > #cpp
+  {
+    grid-area: cpp;
+    background-image: url("./../../Image/c-.png");
+  }
+  > #java
+  {
+    grid-area: java;
+    background-image: url("./../../Image/Java.png");
+  }
+  > #git
+  {
+    grid-area: git;
+    background-image: url("./../../Image/git.png");
+  }
+  > #figma
+  {
+    grid-area: figma;
+    background-image: url("./../../Image/figma.png");
+  }
+  > #python
+  {
+    grid-area: py;
+    background-image: url("./../../Image/py.png");
+  }
+  > #android
+  {
+    grid-area: android;
+    background-image: url("./../../Image/android.png");
+  }
+}

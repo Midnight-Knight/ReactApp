@@ -1,6 +1,7 @@
 import React from "react";
 import "./Sections.css";
 import {DivName} from "../DivsUI/Divs";
+import {GridTechnologies} from "../GridsUI/Grids";
 
 
 
@@ -15,7 +16,7 @@ export const FirstSection = () => {
 export const SecondSection = () => {
     return (
         <section id="SecondSection">
-
+            <GridTechnologies/>
         </section>
     )
 }

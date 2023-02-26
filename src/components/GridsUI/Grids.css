@@ -1,0 +1,69 @@
+#GridTechnologies {
+  width: 90vw;
+  height: 71.625vw;
+  display: grid;
+  justify-content: space-between;
+  align-content: space-between;
+  grid-template-columns: repeat(5, 16.5vw);
+  grid-template-rows: repeat(4, 16.5vw);
+  grid-template-areas: "js js html ts ts" "js js css ts ts" "sass sass react figma git" "cpp py android java java";
+}
+#GridTechnologies > div {
+  background-position: center;
+  background-size: cover;
+  opacity: 0.35;
+  transition: 1s opacity;
+}
+#GridTechnologies > div:hover {
+  opacity: 1;
+}
+#GridTechnologies > #html {
+  grid-area: html;
+  background-image: url("./../../Image/html-5.png");
+}
+#GridTechnologies > #css {
+  grid-area: css;
+  background-image: url("./../../Image/css-3.png");
+}
+#GridTechnologies > #js {
+  grid-area: js;
+  background-image: url("./../../Image/js.jpeg");
+}
+#GridTechnologies > #ts {
+  grid-area: ts;
+  background-image: url("./../../Image/TS.jpg");
+}
+#GridTechnologies > #sass {
+  grid-area: sass;
+  background-image: url("./../../Image/sass.jpg");
+}
+#GridTechnologies > #react {
+  grid-area: react;
+  background-image: url("./../../Image/react.png");
+}
+#GridTechnologies > #cpp {
+  grid-area: cpp;
+  background-image: url("./../../Image/c-.png");
+}
+#GridTechnologies > #java {
+  grid-area: java;
+  background-image: url("./../../Image/Java.png");
+}
+#GridTechnologies > #git {
+  grid-area: git;
+  background-image: url("./../../Image/git.png");
+}
+#GridTechnologies > #figma {
+  grid-area: figma;
+  background-image: url("./../../Image/figma.png");
+}
+#GridTechnologies > #python {
+  grid-area: py;
+  background-image: url("./../../Image/py.png");
+}
+#GridTechnologies > #android {
+  grid-area: android;
+  background-image: url("./../../Image/android.png");
+}
+
+/*# sourceMappingURL=Grids.css.map */
