@@ -15,8 +15,10 @@
   align-items: center;
   overflow: hidden;
   border-radius: 24px;
-  transition: 1s box-shadow;
+  transition: 1s box-shadow, 1s border;
   animation: start 1.75s 1;
+  border: 0.15vw solid rgba(255, 255, 255, 0.5);
+  box-sizing: content-box;
 }
 #Name > div:nth-child(1) {
   background: rgb(32, 33, 79);
@@ -92,6 +94,9 @@
   background-position: center;
   border-radius: 4vw;
   margin: 2vw;
+  box-sizing: content-box;
+  border: 0.15vw solid rgb(32, 33, 79);
+  transition: 1s border, 1s transform;
 }
 #Name > div:nth-child(1) > div:nth-child(3) > a:nth-child(1) {
   margin-left: 0;
@@ -136,10 +141,18 @@
 }
 
 #Name:hover {
-  box-shadow: 0 0 16px 16px rgba(123, 104, 238, 0.5);
+  box-shadow: 0 0 2vw 2vw rgba(123, 104, 238, 0.5);
+  border: 0.15vw solid rgb(255, 255, 255);
 }
 #Name:hover > div:nth-child(1) {
   background: rgb(123, 104, 238);
+}
+#Name:hover > div:nth-child(1) > div:nth-child(3) > a {
+  border: 0.15vw solid rgb(255, 255, 255);
+}
+#Name:hover > div:nth-child(1) > div:nth-child(3) > a:hover {
+  transform: scale(1.2);
+  border: 0.15vw solid rgb(36, 9, 53);
 }
 #Name:hover > div:nth-child(2) > div:nth-child(2) {
   opacity: 1;
