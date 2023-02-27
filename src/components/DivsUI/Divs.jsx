@@ -42,7 +42,7 @@ export const DivReact = () => {
           </div>
           <div>
               <img src={ReactLogo} id="ReactLogo"/>
-              <h6>Welcome to React and Sass</h6>
+              <h6>Created on React and Sass</h6>
           </div>
       </div>
   );
