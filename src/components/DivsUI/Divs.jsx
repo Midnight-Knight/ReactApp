@@ -1,7 +1,6 @@
 import React from "react";
 import "./Divs.css";
 import ReactLogo from "./../../Image/ReactLogo.png";
-import SassLogo from "./../../Image/SassLogo.png";
 
 export const DivName = () => {
     return(
@@ -37,11 +36,14 @@ export const DivName = () => {
 export const DivReact = () => {
   return (
       <div id="React" className="Div">
-          <div id="RowLogo">
-              <img id="ReactLogo" src={ReactLogo}/>
-              <img id="SassLogo" src={SassLogo}/>
+          <div>
+              <div></div>
+              <div></div>
           </div>
-          <h6>Сайт сделан при помощи библиотеки React и препроцессора Sass</h6>
+          <div>
+              <img src={ReactLogo} id="ReactLogo"/>
+              <h6>Welcome to React and Sass</h6>
+          </div>
       </div>
   );
 };

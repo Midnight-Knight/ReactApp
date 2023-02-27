@@ -30,15 +30,15 @@
   border-radius: 24px;
   transition: 1s box-shadow, 1s border;
   border: 0.15vw solid rgba(255, 255, 255, 0.5);
-}
-
-#Name {
-  animation: startLeft 1.75s 1;
-  box-sizing: content-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  box-sizing: content-box;
+}
+
+#Name {
+  animation: startLeft 1.75s 1;
 }
 #Name > div:nth-child(1) {
   background: rgb(32, 33, 79);
@@ -162,30 +162,50 @@
 
 #React {
   background: rgb(32, 33, 79);
-  padding: 2.5% 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   transition: 1s background, 1s box-shadow, 1s border;
   animation: startRight 1.75s 1;
 }
-#React > #RowLogo {
+#React > div:nth-child(1) {
+  width: 35vw;
+  height: 35vw;
+  background-image: url("./../../Image/SassLogo.png");
+  background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  width: 50vw;
 }
-#React > #RowLogo > img {
-  width: 20vw;
-  height: 20vw;
+#React > div:nth-child(1) > div {
+  width: 15vw;
+  height: 35vw;
+  position: absolute;
 }
-#React > #RowLogo > #ReactLogo {
+#React > div:nth-child(1) > div:nth-child(1) {
+  z-index: 2;
+  background: linear-gradient(to left top, rgb(32, 33, 79) 50%, rgba(0, 0, 0, 0) 50%);
+}
+#React > div:nth-child(1) > div:nth-child(2) {
+  z-index: 3;
+  background: linear-gradient(to left top, rgb(123, 104, 238) 50%, rgba(0, 0, 0, 0) 50%);
+  opacity: 0;
+  transition: 1s opacity;
+}
+#React > div:nth-child(2) {
+  width: 45vw;
+  height: 35vw;
+  padding: 2.5% 5% 2.5% 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#React > div:nth-child(2) > img {
+  width: 25vw;
+  height: 25vw;
   animation: Rotation 12s infinite linear;
 }
-#React > h6 {
-  width: 40vw;
+#React > div:nth-child(2) > h6 {
   text-align: center;
   color: rgb(255, 255, 255);
 }
@@ -211,6 +231,9 @@
 
 #React:hover {
   background: rgb(123, 104, 238);
+}
+#React:hover > div:nth-child(1) > div:nth-child(2) {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=Divs.css.map */
