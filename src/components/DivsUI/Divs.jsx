@@ -1,22 +1,25 @@
 import React from "react";
 import "./Divs.css";
 import ReactLogo from "./../../Image/ReactLogo.png";
-import SassLogo from "./../../Image/SassLogo.png";
 
 export const DivName = () => {
+    const name = "Деев Леонид";
+    const vacancy = "Frontend Developer";
+    const list = ["Gmail","Yandex email","Телефон","Адрес"];
+
     return(
         <div id="Name" className="Div">
             <div>
                 <div>
-                    <h2>Деев Леонид</h2>
-                    <h4>Frontend Developer</h4>
+                    <h2>{name}</h2>
+                    <h4>{vacancy}</h4>
                 </div>
                 <div>
                     <ul>
-                        <li>GMail</li>
-                        <li>Yandex email</li>
-                        <li>Телефон</li>
-                        <li>Адрес</li>
+                        <li>{list[0]}</li>
+                        <li>{list[1]}</li>
+                        <li>{list[2]}</li>
+                        <li>{list[3]}</li>
                     </ul>
                 </div>
                 <div>
@@ -35,13 +38,19 @@ export const DivName = () => {
 }
 
 export const DivReact = () => {
-  return (
-      <div id="React" className="Div">
-          <div id="RowLogo">
-              <img id="ReactLogo" src={ReactLogo}/>
-              <img id="SassLogo" src={SassLogo}/>
-          </div>
-          <h6>Сайт сделан при помощи библиотеки React и препроцессора Sass</h6>
-      </div>
-  );
+    const str = "Created on React and Sass";
+
+    return (
+        <div id="React" className="Div">
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+            <div>
+                <img src={ReactLogo} id="ReactLogo"/>
+                <h6>{str}</h6>
+            </div>
+        </div>
+    );
 };
+

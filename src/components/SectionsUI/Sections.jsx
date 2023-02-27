@@ -28,3 +28,11 @@ export const ThirdSection = () => {
         </section>
     )
 }
+
+export const FourthSection = () => {
+  return (
+      <section id="FourthSection">
+
+      </section>
+  );
+};
