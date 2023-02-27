@@ -54,3 +54,11 @@ export const DivReact = () => {
     );
 };
 
+export const DivGrid = (props) => {
+    return (
+        <div id={props.id}>
+
+        </div>
+    );
+};
+

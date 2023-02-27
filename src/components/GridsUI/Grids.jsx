@@ -1,21 +1,20 @@
 import React from "react";
 import "./Grids.css";
+import {DivGrid} from "../DivsUI/Divs";
 
 export const GridTechnologies = () => {
+    const listID = ["html","css","js","ts","sass","react","cpp","java","git","figma","python","android"];
+    let listDiv = [];
+    for (let i = 0; i < listID.length;++i)
+    {
+        listDiv.push(<DivGrid id={listID[i]} key={listID[i]}/>)
+    }
+
     return(
         <div id="GridTechnologies">
-            <div id="html"></div>
-            <div id="css"></div>
-            <div id="js"></div>
-            <div id="ts"></div>
-            <div id="sass"></div>
-            <div id="react"></div>
-            <div id="cpp"></div>
-            <div id="java"></div>
-            <div id="git"></div>
-            <div id="figma"></div>
-            <div id="python"></div>
-            <div id="android"></div>
+            {listDiv.map(elem => {
+                return elem;
+            })}
         </div>
     );
 };
