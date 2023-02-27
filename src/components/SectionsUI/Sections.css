@@ -6,13 +6,7 @@ section {
   overflow: hidden;
 }
 
-#FirstSection {
-  background: rgb(36, 9, 53);
-  width: 100vw;
-  height: 100vh;
-}
-
-#SecondSection {
+#FirstSection, #SecondSection {
   background: rgb(36, 9, 53);
   width: 100vw;
   height: 100vh;
@@ -22,6 +16,12 @@ section {
   background: rgb(0, 0, 0);
   width: 100vw;
   height: 82vw;
+}
+
+#FourthSection {
+  background: rgb(36, 9, 53);
+  width: 100vw;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=Sections.css.map */

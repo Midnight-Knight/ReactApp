@@ -6,15 +6,7 @@ section
   overflow: hidden;
 }
 
-#FirstSection
-{
-  background: $Deep_purple-black;
-  width: 100vw;
-  height: 100vh;
-
-}
-
-#SecondSection
+#FirstSection, #SecondSection
 {
   background: $Deep_purple-black;
   width: 100vw;
@@ -26,4 +18,11 @@ section
   background: $Black;
   width: 100vw;
   height: 82vw;
+}
+
+#FourthSection
+{
+  background: $Deep_purple-black;
+  width: 100vw;
+  height: 100vh;
 }
