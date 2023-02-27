@@ -1,9 +1,11 @@
 import React from "react";
 import "./Divs.css";
+import ReactLogo from "./../../Image/ReactLogo.png";
+import SassLogo from "./../../Image/SassLogo.png";
 
 export const DivName = () => {
     return(
-        <div id="Name">
+        <div id="Name" className="Div">
             <div>
                 <div>
                     <h2>Деев Леонид</h2>
@@ -31,3 +33,15 @@ export const DivName = () => {
         </div>
     )
 }
+
+export const DivReact = () => {
+  return (
+      <div id="React" className="Div">
+          <div id="RowLogo">
+              <img id="ReactLogo" src={ReactLogo}/>
+              <img id="SassLogo" src={SassLogo}/>
+          </div>
+          <h5>Сайт сделан при помощи библиотеки React</h5>
+      </div>
+  );
+};

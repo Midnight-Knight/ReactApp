@@ -1,6 +1,6 @@
 @import "./../../style/Color_and_mixin";
 
-@keyframes start {
+@keyframes startLeft {
   from
   {
     transform: translateX(-100vw);
@@ -9,20 +9,47 @@
   {
     transform: translateX(0vw);
   }
+}
 
+@keyframes startRight {
+  from
+  {
+    transform: translateX(100vw);
+  }
+  to
+  {
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes Rotation {
+  from
+  {
+    transform: rotate(0deg);
+  }
+  to
+  {
+    transform: rotate(360deg);
+  }
+
+}
+
+.Div
+{
+  width: 80vw;
+  height: 35vw;
+  overflow: hidden;
+  box-shadow: none;
+  border-radius: 24px;
+  transition: 1s box-shadow, 1s border;
+  border: 0.15vw solid $WhiteA;
 }
 
 #Name
 {
-  width: 80vw;
-  height: 35vw;
-  @include FlexRowSbCe();
-  overflow: hidden;
-  border-radius: 24px;
-  transition: 1s box-shadow, 1s border;
-  animation: start 1.75s 1;
-  border: 0.15vw solid $WhiteA;
+  animation: startLeft 1.75s 1;
   box-sizing: content-box;
+  @include FlexRowSbCe();
   > div:nth-child(1)
   {
     background: $Ultramarine_Blue;
@@ -148,10 +175,43 @@
   }
 }
 
-#Name:hover
+#React
+{
+  background: $Ultramarine_Blue;
+  padding: 2.5% 5%;
+  @include FlexColumnSbCe();
+  transition: 1s background, 1s box-shadow, 1s border;
+  animation: startRight 1.75s 1;
+  > #RowLogo
+  {
+    @include FlexRowSbCe();
+    width: 60vw;
+    > img
+    {
+      width: 25vw;
+      height: 25vw;
+    }
+    > #ReactLogo
+    {
+      animation: Rotation 12s infinite linear;
+    }
+  }
+  > h5
+  {
+    width: 30vw;
+    text-align: center;
+    color: $White;
+  }
+}
+
+.Div:hover
 {
   box-shadow: 0 0 2vw 2vw $Moderate_slate_blueA;
   border: 0.15vw solid $White;
+}
+
+#Name:hover
+{
   > div:nth-child(1)
   {
     background: $Moderate_slate_blue;
@@ -172,4 +232,9 @@
       opacity: 1;
     }
   }
+}
+
+#React:hover
+{
+  background: $Moderate_slate_blue;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Sections.css";
-import {DivName} from "../DivsUI/Divs";
+import {DivName, DivReact} from "../DivsUI/Divs";
 import {GridTechnologies} from "../GridsUI/Grids";
 
 
@@ -8,7 +8,7 @@ import {GridTechnologies} from "../GridsUI/Grids";
 export const FirstSection = () => {
     return (
         <section id="FirstSection">
-            <DivName/>
+            <DivReact/>
         </section>
     )
 }
@@ -16,7 +16,7 @@ export const FirstSection = () => {
 export const SecondSection = () => {
     return (
         <section id="SecondSection">
-            <GridTechnologies/>
+            <DivName/>
         </section>
     )
 }
@@ -24,7 +24,7 @@ export const SecondSection = () => {
 export const ThirdSection = () => {
     return (
         <section id="ThirdSection">
-
+            <GridTechnologies/>
         </section>
     )
 }
