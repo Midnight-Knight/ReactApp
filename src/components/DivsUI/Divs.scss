@@ -185,20 +185,20 @@
   > #RowLogo
   {
     @include FlexRowSbCe();
-    width: 60vw;
+    width: 50vw;
     > img
     {
-      width: 25vw;
-      height: 25vw;
+      width: 20vw;
+      height: 20vw;
     }
     > #ReactLogo
     {
       animation: Rotation 12s infinite linear;
     }
   }
-  > h5
+  > h6
   {
-    width: 30vw;
+    width: 40vw;
     text-align: center;
     color: $White;
   }

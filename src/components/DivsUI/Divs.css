@@ -175,17 +175,17 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 60vw;
+  width: 50vw;
 }
 #React > #RowLogo > img {
-  width: 25vw;
-  height: 25vw;
+  width: 20vw;
+  height: 20vw;
 }
 #React > #RowLogo > #ReactLogo {
   animation: Rotation 12s infinite linear;
 }
-#React > h5 {
-  width: 30vw;
+#React > h6 {
+  width: 40vw;
   text-align: center;
   color: rgb(255, 255, 255);
 }

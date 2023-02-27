@@ -41,7 +41,7 @@ export const DivReact = () => {
               <img id="ReactLogo" src={ReactLogo}/>
               <img id="SassLogo" src={SassLogo}/>
           </div>
-          <h5>Сайт сделан при помощи библиотеки React</h5>
+          <h6>Сайт сделан при помощи библиотеки React и препроцессора Sass</h6>
       </div>
   );
 };
