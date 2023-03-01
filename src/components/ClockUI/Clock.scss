@@ -1,0 +1,11 @@
+@import "./../../style/Color_and_mixin";
+
+#Clock
+{
+  @include FlexRowCeCe();
+  padding: 1vw;
+  color: $White;
+  background: $Moderate_slate_blueA;
+  border-radius: 1vw;
+  border: 0.1vw solid $White;
+}

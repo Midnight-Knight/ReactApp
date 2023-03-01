@@ -17,12 +17,21 @@
   {
     background-position: center;
     background-size: cover;
-    opacity: 1;
     transition: 1s opacity;
-  }
-  > div:hover
-  {
-    opacity: 0.45;
+    border: 0.15vw solid $White;
+    > div
+    {
+      background: rgba(0,0,0,0.6);
+      padding: 5%;
+      width: 100%;
+      height: 100%;
+      @include FlexColumnCeCe();
+      > p
+      {
+        text-align: center;
+        color: $White;
+      }
+    }
   }
   > #html
   {
