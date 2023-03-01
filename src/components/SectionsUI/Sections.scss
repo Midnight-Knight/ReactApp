@@ -24,5 +24,5 @@ section
 {
   background: $Deep_purple-black;
   width: 100vw;
-  height: 100vh;
+  @include FlexColumnFsFs();
 }

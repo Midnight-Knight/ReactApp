@@ -21,7 +21,10 @@ section {
 #FourthSection {
   background: rgb(36, 9, 53);
   width: 100vw;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 /*# sourceMappingURL=Sections.css.map */

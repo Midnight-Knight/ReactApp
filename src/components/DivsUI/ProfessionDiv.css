@@ -1,0 +1,19 @@
+.ProfessionDiv {
+  width: 70vw;
+  height: 30vw;
+  border-radius: 2vw;
+  border: 0.15vw solid rgb(255, 255, 255);
+  background: rgb(32, 33, 79);
+}
+
+.LeftUp {
+  margin-left: 10vw;
+  margin-top: 20vw;
+}
+
+.RightBottom {
+  margin-rdcx: 10vw;
+  margin-top: 20vw;
+}
+
+/*# sourceMappingURL=ProfessionDiv.css.map */

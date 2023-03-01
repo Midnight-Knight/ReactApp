@@ -1,5 +1,6 @@
 import React from "react";
 import "./Divs.css";
+import "./ProfessionDiv.css";
 import ReactLogo from "./../../Image/ReactLogo.png";
 
 export const DivName = () => {
@@ -54,5 +55,11 @@ export const DivReact = () => {
     );
 };
 
+export const ProfessionDiv = () => {
+    return (
+        <div className="ProfessionDiv LeftUp">
 
+        </div>
+    );
+};
 

@@ -9,18 +9,9 @@ export const GridTechnologies = () => {
     for (let i = 0; i < listID.length;++i)
     {
         listDiv.push(
-            <div id={listID[i]} key={listID[i]} onMouseOver={() => onmouseover(i, listID)} onMouseOut={() => onmouseout(listID)}>
-
-            </div>)
+            <div id={listID[i]} key={listID[i]} onMouseOver={() => onmouseover(i, listID)} onMouseOut={() => onmouseout(listID)}/>
+        )
     }
-
-    /*
-                <div>
-                    <p>{listID[i][2]}</p>
-                    <p>Опыт работы: {zero}</p>
-                    <p>Опыт разработки: {listID[i][1].toLocaleDateString()}</p>
-                </div>
-     */
 
     return(
         <div id="GridTechnologies">

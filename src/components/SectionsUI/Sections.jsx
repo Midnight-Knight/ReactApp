@@ -1,6 +1,6 @@
 import React from "react";
 import "./Sections.css";
-import {DivName, DivReact} from "../DivsUI/Divs";
+import {DivName, DivReact, ProfessionDiv} from "../DivsUI/Divs";
 import {GridTechnologies} from "../GridsUI/Grids";
 
 
@@ -32,7 +32,7 @@ export const ThirdSection = () => {
 export const FourthSection = () => {
   return (
       <section id="FourthSection">
-
+          <ProfessionDiv/>
       </section>
   );
 };
