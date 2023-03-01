@@ -1,19 +1,46 @@
 .ProfessionDiv {
-  width: 70vw;
-  height: 30vw;
+  width: 55vw;
+  height: 25vw;
   border-radius: 2vw;
   border: 0.15vw solid rgb(255, 255, 255);
   background: rgb(32, 33, 79);
 }
+.ProfessionDiv > img {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 2vw;
+  border: 0.15vw solid rgb(255, 255, 255);
+  transition: 1s width, 1s height;
+}
+.ProfessionDiv > img:hover {
+  width: 25vw;
+  height: 25vw;
+}
 
 .LeftUp {
-  margin-left: 10vw;
+  margin-left: 15vw;
   margin-top: 20vw;
+  margin-bottom: 5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.LeftUp > img {
+  transform: translateX(-5vw);
 }
 
 .RightBottom {
-  margin-rdcx: 10vw;
-  margin-top: 20vw;
+  margin-left: 30vw;
+  margin-top: 5vw;
+  margin-bottom: 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.RightBottom > img {
+  transform: translateX(5vw);
 }
 
 /*# sourceMappingURL=ProfessionDiv.css.map */

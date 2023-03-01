@@ -2,6 +2,8 @@ import React from "react";
 import "./Divs.css";
 import "./ProfessionDiv.css";
 import ReactLogo from "./../../Image/ReactLogo.png";
+import Frontend1 from "./../../Image/Frontend1.png";
+import Frontend2 from "./../../Image/Frontend2.png";
 
 export const DivName = () => {
     const name = "Деев Леонид";
@@ -57,9 +59,20 @@ export const DivReact = () => {
 
 export const ProfessionDiv = () => {
     return (
-        <div className="ProfessionDiv LeftUp">
+        <>
+            <div className="ProfessionDiv LeftUp">
+                <img src={Frontend1}/>
+                <div>
 
-        </div>
+                </div>
+            </div>
+            <div className="ProfessionDiv RightBottom">
+                <div>
+
+                </div>
+                <img src={Frontend2}/>
+            </div>
+        </>
     );
 };
 

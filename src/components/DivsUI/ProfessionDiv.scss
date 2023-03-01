@@ -2,23 +2,46 @@
 
 .ProfessionDiv
 {
-  width: 70vw;
-  height: 30vw;
+  width: 55vw;
+  height: 25vw;
   border-radius: 2vw;
   border: 0.15vw solid $White;
   background: $Ultramarine_Blue;
+  > img
+  {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 2vw;
+    border: 0.15vw solid $White;
+    transition: 1s width, 1s height;
+  }
+  >img:hover
+  {
+    width: 25vw;
+    height: 25vw;
+  }
 }
 
 .LeftUp
 {
-  margin-left: 10vw;
+  margin-left: 15vw;
   margin-top: 20vw;
+  margin-bottom: 5vw;
+  @include FlexRowFsCe();
+  > img
+  {
+    transform: translateX(-5vw);
+  }
 }
 
 .RightBottom
 {
-  margin-rdcx
-  color: #zzzz;
-  caret-color: ;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          : 10vw;
-  margin-top: 20vw;
+  margin-left: 30vw;
+  margin-top: 5vw;
+  margin-bottom: 20vw;
+  @include FlexRowFeCe();
+  > img
+  {
+    transform: translateX(5vw);
+  }
 }
