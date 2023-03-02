@@ -1,46 +1,94 @@
 .ProfessionDiv {
-  width: 55vw;
+  width: 60vw;
   height: 25vw;
   border-radius: 2vw;
   border: 0.15vw solid rgb(255, 255, 255);
   background: rgb(32, 33, 79);
+  box-shadow: none;
+  transition: 1s background, 1s box-shadow;
 }
 .ProfessionDiv > img {
   width: 20vw;
   height: 20vw;
   border-radius: 2vw;
   border: 0.15vw solid rgb(255, 255, 255);
-  transition: 1s width, 1s height;
+  transition: 1s transform;
 }
 .ProfessionDiv > img:hover {
-  width: 25vw;
-  height: 25vw;
+  transform: scale(1.25);
+}
+.ProfessionDiv > div {
+  width: 35vw;
+  margin: 1vw;
+  transition: 1s transform;
+}
+.ProfessionDiv > div > * {
+  color: rgb(255, 255, 255);
 }
 
-.LeftUp {
+.ProfessionDiv:hover {
+  background: rgb(123, 104, 238);
+  box-shadow: 0 0 2vw 2vw rgba(123, 104, 238, 0.5);
+}
+
+.Left {
   margin-left: 15vw;
-  margin-top: 20vw;
+  margin-top: 5vw;
   margin-bottom: 5vw;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
-.LeftUp > img {
+.Left > img {
   transform: translateX(-5vw);
 }
-
-.RightBottom {
-  margin-left: 30vw;
-  margin-top: 5vw;
-  margin-bottom: 20vw;
+.Left > div {
+  transform: translateX(-5vw);
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.Left > div > * {
+  text-align: left;
+}
+.Left > img:hover + div {
+  transform: translateX(2.5vw);
+}
+
+.Right {
+  margin-left: 25vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
   align-items: center;
 }
-.RightBottom > img {
+.Right > img {
   transform: translateX(5vw);
+}
+.Right > div {
+  transform: translateX(5vw);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.Right > div > * {
+  text-align: right;
+}
+.Right > img:hover + div {
+  transform: translateX(-2.5vw);
+}
+
+.Start {
+  margin-top: 20vw;
+}
+
+.End {
+  margin-bottom: 20vw;
 }
 
 /*# sourceMappingURL=ProfessionDiv.css.map */

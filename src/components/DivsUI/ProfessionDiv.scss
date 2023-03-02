@@ -2,46 +2,99 @@
 
 .ProfessionDiv
 {
-  width: 55vw;
+  width: 60vw;
   height: 25vw;
   border-radius: 2vw;
   border: 0.15vw solid $White;
   background: $Ultramarine_Blue;
+  box-shadow: none;
+  transition: 1s background, 1s box-shadow;
   > img
   {
     width: 20vw;
     height: 20vw;
     border-radius: 2vw;
     border: 0.15vw solid $White;
-    transition: 1s width, 1s height;
+    transition: 1s transform;
   }
   >img:hover
   {
-    width: 25vw;
-    height: 25vw;
+    transform: scale(1.25);
+  }
+  > div
+  {
+    width: 35vw;
+    margin: 1vw;
+    transition: 1s transform;
+    > *
+    {
+      color: $White;
+    }
   }
 }
 
-.LeftUp
+.ProfessionDiv:hover
+{
+  background: $Moderate_slate_blue;
+  box-shadow: 0 0 2vw 2vw $Moderate_slate_blueA;
+}
+
+.Left
 {
   margin-left: 15vw;
-  margin-top: 20vw;
+  margin-top: 5vw;
   margin-bottom: 5vw;
   @include FlexRowFsCe();
   > img
   {
     transform: translateX(-5vw);
   }
+  > div
+  {
+    transform: translateX(-5vw);
+    @include FlexColumnCeFs();
+    > *
+    {
+      text-align: left;
+    }
+  }
+  > img:hover + div
+  {
+    transform: translateX(2.5vw);
+  }
 }
 
-.RightBottom
+.Right
 {
-  margin-left: 30vw;
+  margin-left: 25vw;
   margin-top: 5vw;
-  margin-bottom: 20vw;
-  @include FlexRowFeCe();
+  margin-bottom: 5vw;
+  @include FlexRowReverseFsCe();
   > img
   {
     transform: translateX(5vw);
   }
+  > div
+  {
+    transform: translateX(5vw);
+    @include FlexColumnCeFe();
+    > *
+    {
+      text-align: right;
+    }
+  }
+  > img:hover + div
+  {
+    transform: translateX(-2.5vw);
+  }
+}
+
+.Start
+{
+  margin-top: 20vw;
+}
+
+.End
+{
+  margin-bottom: 20vw;
 }

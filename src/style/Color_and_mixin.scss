@@ -25,6 +25,14 @@ $WhiteA: rgba(255,255,255,0.5);
   align-items: center;
 }
 
+@mixin FlexRowReverseFsCe()
+{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 @mixin FlexRowCeCe()
 {
   display: flex;
@@ -79,6 +87,14 @@ $WhiteA: rgba(255,255,255,0.5);
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+@mixin FlexColumnCeFe()
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 @mixin FlexColumnSbFs()

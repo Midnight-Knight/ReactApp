@@ -4,6 +4,9 @@ import "./ProfessionDiv.css";
 import ReactLogo from "./../../Image/ReactLogo.png";
 import Frontend1 from "./../../Image/Frontend1.png";
 import Frontend2 from "./../../Image/Frontend2.png";
+import Android_Dev from "./../../Image/android_dev.png";
+import Game_Dev from "./../../Image/game_dev.png";
+import Design from "./../../Image/design.png";
 
 export const DivName = () => {
     const name = "Деев Леонид";
@@ -58,20 +61,53 @@ export const DivReact = () => {
 };
 
 export const ProfessionDiv = () => {
+    let arrImage = [Frontend1,Frontend2, Design, Game_Dev, Android_Dev];
+    let arrH = ["Frontend разработчик", "HTML-верстальщик","Веб/Мобильный Дизайнер","Игровой разработчик","Android разработчик"];
+    let arr = [];
+    const size = 5;
+    for (let i = 0; i < size; ++i)
+    {
+        let str = "ProfessionDiv";
+        switch (i%2)
+        {
+            case 0:
+                str += " Left";
+                switch (i)
+                {
+                    case 0:
+                        str += " Start";
+                        break;
+                    case size-1:
+                        str += " End";
+                }
+                break;
+            case 1:
+                str += " Right";
+                switch (i)
+                {
+                    case 0:
+                        str += " Start";
+                        break;
+                    case size-1:
+                        str += " End";
+                }
+                break;
+        }
+        arr.push(
+            <div className={str}>
+                <img src={arrImage[i]}/>
+                <div>
+                    <h5>{arrH[i]}</h5>
+                    <p>Описание</p>
+                </div>
+            </div>
+        )
+    }
     return (
         <>
-            <div className="ProfessionDiv LeftUp">
-                <img src={Frontend1}/>
-                <div>
-
-                </div>
-            </div>
-            <div className="ProfessionDiv RightBottom">
-                <div>
-
-                </div>
-                <img src={Frontend2}/>
-            </div>
+            {arr.map(elem => {
+                return elem;
+            })}
         </>
     );
 };
