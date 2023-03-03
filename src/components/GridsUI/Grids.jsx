@@ -1,6 +1,5 @@
 import React from "react";
 import "./Grids.css";
-import {onmouseover, onmouseout} from "./GridEvent.js";
 
 
 export const GridTechnologies = () => {
@@ -47,7 +46,7 @@ export const GridTechnologies = () => {
             }
         }
         listDiv.push(
-            <div id={listID[i][0]} key={listID[i][0]} onMouseOver={() => onmouseover(i, listID)} onMouseOut={() => onmouseout(listID)}>
+            <div id={listID[i][0]} key={listID[i][0]}>
                 <div>
                     <p>{listID[i][2]}</p>
                     <p>Опыт работы: 0д</p>
