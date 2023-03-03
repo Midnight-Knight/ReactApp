@@ -13,20 +13,31 @@
   background-size: cover;
   transition: 1s opacity;
   border: 0.15vw solid rgb(255, 255, 255);
+  overflow: hidden;
 }
 #GridTechnologies > div > div {
   background: rgba(0, 0, 0, 0.6);
-  padding: 5%;
   width: 100%;
   height: 100%;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transform: translateY(100%);
+  transition: 1s transform;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 #GridTechnologies > div > div > p {
+  font-size: 1.5vw;
   text-align: center;
   color: rgb(255, 255, 255);
+}
+#GridTechnologies > div:hover > div {
+  transform: translateY(0%);
+}
+#GridTechnologies > #js > div > p, #GridTechnologies > #ts > div > p, #GridTechnologies > #sass > div > p, #GridTechnologies > #java > div > p {
+  font-size: 2vw;
 }
 #GridTechnologies > #html {
   grid-area: html;
