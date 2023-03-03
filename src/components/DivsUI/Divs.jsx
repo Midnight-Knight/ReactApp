@@ -64,7 +64,7 @@ export const ProfessionDiv = () => {
     let arrImage = [Frontend1,Frontend2, Design, Game_Dev, Android_Dev];
     let arrH = ["Frontend разработчик", "HTML-верстальщик","Веб/Мобильный Дизайнер","Игровой разработчик","Android разработчик"];
     let arr = [];
-    const size = 5;
+    const size = 2;
     for (let i = 0; i < size; ++i)
     {
         let str = "ProfessionDiv";
@@ -72,25 +72,18 @@ export const ProfessionDiv = () => {
         {
             case 0:
                 str += " Left";
-                switch (i)
-                {
-                    case 0:
-                        str += " Start";
-                        break;
-                    case size-1:
-                        str += " End";
-                }
                 break;
             case 1:
                 str += " Right";
-                switch (i)
-                {
-                    case 0:
-                        str += " Start";
-                        break;
-                    case size-1:
-                        str += " End";
-                }
+                break;
+        }
+        switch (i)
+        {
+            case 0:
+                str += " Start";
+                break;
+            case size-1:
+                str += " End";
                 break;
         }
         arr.push(
@@ -98,7 +91,9 @@ export const ProfessionDiv = () => {
                 <img src={arrImage[i]}/>
                 <div>
                     <h5>{arrH[i]}</h5>
-                    <p>Описание</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cum est fugiat harum
+                        laudantium magnam odit! A animi culpa, debitis, enim est et facere nostrum odit quas
+                        reprehenderit sed, voluptatibus.</p>
                 </div>
             </div>
         )
