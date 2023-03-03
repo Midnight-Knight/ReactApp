@@ -62,7 +62,10 @@ export const DivReact = () => {
 
 export const ProfessionDiv = () => {
     let arrImage = [Frontend1,Frontend2, Design, Game_Dev, Android_Dev];
-    let arrH = ["Frontend разработчик", "HTML-верстальщик","Веб/Мобильный Дизайнер","Игровой разработчик","Android разработчик"];
+    let arrH = [["Frontend разработчик","Фронтенд-разработчик создает динамический пользовательский интерфейс сайта, используя HTML, CSS, JavaScript, " +
+    "JS библиотеки и фреймворки. Он отвечает за отображение контента на экране и обеспечивает удобство использования для пользователя."],
+        ["HTML-верстальщик","HTML-верстальщик занимается созданием структуры сайта с помощью языка разметки HTML и таблицы каскадных стилей CSS. \n Он учитывает дизайн и функциональность, " +
+        "обеспечивает правильную работу сайта на различных устройствах и браузерах."],["Веб/Мобильный Дизайнер",""],["Игровой разработчик",""],["Android разработчик",""]];
     let arr = [];
     const size = 2;
     for (let i = 0; i < size; ++i)
@@ -90,10 +93,8 @@ export const ProfessionDiv = () => {
             <div className={str}>
                 <img src={arrImage[i]}/>
                 <div>
-                    <h5>{arrH[i]}</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus cum est fugiat harum
-                        laudantium magnam odit! A animi culpa, debitis, enim est et facere nostrum odit quas
-                        reprehenderit sed, voluptatibus.</p>
+                    <h5>{arrH[i][0]}</h5>
+                    <p>{arrH[i][1]}</p>
                 </div>
             </div>
         )

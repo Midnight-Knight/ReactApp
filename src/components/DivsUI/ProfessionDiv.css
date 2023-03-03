@@ -25,6 +25,9 @@
 .ProfessionDiv > div > * {
   color: rgb(255, 255, 255);
 }
+.ProfessionDiv > div > p {
+  white-space: pre-line;
+}
 
 .ProfessionDiv:hover {
   background: rgb(123, 104, 238);
