@@ -13,6 +13,12 @@ header
   z-index: 10;
   border-bottom: 0.1vh solid $White;
   transition: 0.5s transform;
+  > button
+  {
+    width: 8vmin;
+    height: 8vmin;
+    background: aqua;
+  }
   > img
   {
     width: 8vmin;

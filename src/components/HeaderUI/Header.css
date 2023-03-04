@@ -15,6 +15,11 @@ header {
   border-bottom: 0.1vh solid rgb(255, 255, 255);
   transition: 0.5s transform;
 }
+header > button {
+  width: 8vmin;
+  height: 8vmin;
+  background: aqua;
+}
 header > img {
   width: 8vmin;
   height: 8vmin;

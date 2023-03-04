@@ -19,17 +19,40 @@
     background-size: cover;
     transition: 1s opacity;
     border: 0.15vw solid $White;
+    overflow: hidden;
+    border-radius: 2vw;
     > div
     {
+      position: relative;
       background: rgba(0,0,0,0.6);
-      padding: 5%;
       width: 100%;
       height: 100%;
+      @include blur(6px);
+      top: 100%;
+      transition: 1s top;
       @include FlexColumnCeCe();
+      border-radius: 2vw;
       > p
       {
+        font-size: 1.5vw;
         text-align: center;
         color: $White;
+      }
+    }
+  }
+  > div:hover
+  {
+    > div {
+      top: 0%;
+    }
+  }
+  > #js,> #ts,> #sass,> #java
+  {
+    >div
+    {
+      >p
+      {
+        font-size: 2vw;
       }
     }
   }
