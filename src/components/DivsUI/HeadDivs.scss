@@ -6,8 +6,4 @@
   width: 100vw;
   height: 35vw;
   @include FlexColumnCeCe();
-  > *
-  {
-    color: $White;
-  }
 }

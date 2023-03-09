@@ -61,9 +61,6 @@
   align-items: flex-start;
   transition: 1s background;
 }
-#Name > div:nth-child(1) * {
-  color: rgb(255, 255, 255);
-}
 #Name > div:nth-child(1) > div {
   width: 100%;
 }
@@ -217,7 +214,6 @@
 }
 #React > div:nth-child(2) > h6 {
   text-align: center;
-  color: rgb(255, 255, 255);
 }
 
 #Name:hover > div:nth-child(1) {

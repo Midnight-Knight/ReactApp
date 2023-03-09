@@ -17,9 +17,6 @@
   margin: 1vw;
   transition: 1s transform;
 }
-.ProfessionDiv > div > * {
-  color: rgb(255, 255, 255);
-}
 .ProfessionDiv > div > p {
   white-space: pre-line;
 }

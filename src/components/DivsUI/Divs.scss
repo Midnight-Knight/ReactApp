@@ -70,10 +70,6 @@
     padding: 2.5% 5%;
     @include FlexColumnSbFs();
     transition: 1s background;
-    *
-    {
-      color: $White;
-    }
     > div
     {
       width: 100%;
@@ -234,7 +230,6 @@
     > h6
     {
       text-align: center;
-      color: $White;
     }
   }
 }
