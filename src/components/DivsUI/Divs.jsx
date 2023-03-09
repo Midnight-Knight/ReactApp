@@ -108,3 +108,27 @@ export const ProfessionDiv = () => {
     );
 };
 
+export const AchievementsDivs = () => {
+    let arr = []
+    for (let i = 0; i < 1; ++i)
+    {
+        arr.push(
+            <div className="AchievementsDivs">
+                <div>
+                    <img/>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+        )
+    }
+    return (
+        <>
+            {arr.map(elem => {
+                return elem;
+            })}
+        </>
+    );
+};
+
