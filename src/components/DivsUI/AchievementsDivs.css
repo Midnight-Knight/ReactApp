@@ -7,13 +7,30 @@
   height: 45vw;
   border-radius: 2vw;
   background: rgb(32, 33, 79);
-  border: 0.15vw solid rgb(255, 255, 255);
+  border: 0.15vw solid rgba(255, 255, 255, 0.5);
   margin-top: 5vw;
   margin-bottom: 5vw;
+  padding: 5%;
+}
+.AchievementsDivs > img {
+  height: 40%;
+  border: 0.15vw solid rgb(255, 255, 255);
+  border-radius: 2vw;
+  transition: 1s transform;
+}
+.AchievementsDivs > img:hover {
+  transform: scale(1.35);
+}
+.AchievementsDivs > p {
+  text-align: center;
 }
 
-#Start {
+.Start {
   margin-top: 15vw;
+}
+
+.End {
+  margin-bottom: 15vw;
 }
 
 /*# sourceMappingURL=AchievementsDivs.css.map */

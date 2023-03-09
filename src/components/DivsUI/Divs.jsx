@@ -9,6 +9,7 @@ import Frontend2 from "./../../Image/Frontend2.png";
 import Android_Dev from "./../../Image/android_dev.png";
 import Game_Dev from "./../../Image/game_dev.png";
 import Design from "./../../Image/design.png";
+import Space from  "./../../Image/-chqhtmfA62hfRUizy3aG7xnTI4GsZeivPzepy6nrWION2JfadHthhne1TskDBFtAwFdMS0SNzXgyI9umZlVcgsZ.jpg";
 
 export const DivName = () => {
     const name = "Деев Леонид";
@@ -124,22 +125,25 @@ export const AchievementsDivs = () => {
     let len = 1;
     for (let i = 0; i < 1; ++i)
     {
-        let str = "";
+        let str = "AchievementsDivs";
         switch (i)
         {
-            case len:
+            case 0:
+                str += " Start";
                 break;
-            case 1:
+        }
+        switch (i)
+        {
+            case len-1:
+                str += " End";
                 break;
         }
         arr.push(
-            <div className="AchievementsDivs">
-                <div>
-                    <img/>
-                </div>
-                <div>
-                    <p></p>
-                </div>
+            <div className={str}>
+                <img src={Space}/>
+                <h5>Lorem ipsum dolor sit amet.</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, neque tempora? Ab animi at eius
+                    iusto repellat soluta tempora vel?</p>
             </div>
         )
     }

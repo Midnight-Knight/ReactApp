@@ -7,12 +7,33 @@
   height: 45vw;
   border-radius: 2vw;
   background: $Ultramarine_Blue;
-  border: 0.15vw solid $White;
+  border: 0.15vw solid $WhiteA;
   margin-top: 5vw;
   margin-bottom: 5vw;
+  padding: 5%;
+  > img
+  {
+    height: 40%;
+    border: 0.15vw solid $White;
+    border-radius: 2vw;
+    transition: 1s transform;
+  }
+  > img:hover
+  {
+    transform: scale(1.35);
+  }
+  > p
+  {
+    text-align: center;
+  }
 }
 
-#Start
+.Start
 {
   margin-top: 15vw;
+}
+
+.End
+{
+  margin-bottom: 15vw;
 }
