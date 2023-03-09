@@ -17,7 +17,7 @@ export const DivName = () => {
     const list = ["Gmail","Yandex email","Телефон","Адрес"];
 
     return(
-        <div id="Name" className="Div">
+        <div id="Name" className="Div UnitedDiv">
             <div>
                 <div>
                     <h2>{name}</h2>
@@ -50,7 +50,7 @@ export const DivReact = () => {
     const str = "Created on React and Sass";
 
     return (
-        <div id="React" className="Div">
+        <div id="React" className="Div UnitedDiv">
             <div>
                 <div></div>
                 <div></div>
@@ -73,7 +73,7 @@ export const ProfessionDiv = () => {
     const size = 2;
     for (let i = 0; i < size; ++i)
     {
-        let str = "ProfessionDiv";
+        let str = "ProfessionDiv UnitedDiv";
         switch (i%2)
         {
             case 0:
@@ -125,7 +125,7 @@ export const AchievementsDivs = () => {
     let len = 1;
     for (let i = 0; i < 1; ++i)
     {
-        let str = "AchievementsDivs";
+        let str = "AchievementsDivs UnitedDiv";
         switch (i)
         {
             case 0:

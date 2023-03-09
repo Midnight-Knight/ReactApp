@@ -25,22 +25,21 @@
 .UnitedDiv {
   background: rgb(32, 33, 79);
   border: 0.15vw solid rgba(255, 255, 255, 0.5);
-  transition: 1s background, 1s border;
+  box-shadow: none;
+  transition: 1s background, 1s border, 1s box-shadow;
+  border-radius: 2vw;
 }
 
 .UnitedDiv:hover {
   background: rgb(123, 104, 238);
   border: 0.15vw solid rgb(255, 255, 255);
+  box-shadow: 0 0 2vw 2vw rgba(123, 104, 238, 0.5);
 }
 
 .Div {
   width: 80vw;
   height: 35vw;
   overflow: hidden;
-  box-shadow: none;
-  border-radius: 2vw;
-  transition: 1s box-shadow, 1s border;
-  border: 0.15vw solid rgba(255, 255, 255, 0.5);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -219,11 +218,6 @@
 #React > div:nth-child(2) > h6 {
   text-align: center;
   color: rgb(255, 255, 255);
-}
-
-.Div:hover {
-  box-shadow: 0 0 2vw 2vw rgba(123, 104, 238, 0.5);
-  border: 0.15vw solid rgb(255, 255, 255);
 }
 
 #Name:hover > div:nth-child(1) {

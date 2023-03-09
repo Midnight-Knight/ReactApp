@@ -38,13 +38,16 @@
 {
   background: $Ultramarine_Blue;
   border: 0.15vw solid $WhiteA;
-  transition: 1s background, 1s border;
+  box-shadow: none;
+  transition: 1s background, 1s border, 1s box-shadow;
+  border-radius: 2vw;
 }
 
 .UnitedDiv:hover
 {
   background: $Moderate_slate_blue;
   border: 0.15vw solid $White;
+  box-shadow: 0 0 2vw 2vw $Moderate_slate_blueA;
 }
 
 .Div
@@ -52,10 +55,6 @@
   width: 80vw;
   height: 35vw;
   overflow: hidden;
-  box-shadow: none;
-  border-radius: 2vw;
-  transition: 1s box-shadow, 1s border;
-  border: 0.15vw solid $WhiteA;
   @include FlexRowSbCe();
   box-sizing: content-box;
 }
@@ -238,12 +237,6 @@
       color: $White;
     }
   }
-}
-
-.Div:hover
-{
-  box-shadow: 0 0 2vw 2vw $Moderate_slate_blueA;
-  border: 0.15vw solid $White;
 }
 
 #Name:hover

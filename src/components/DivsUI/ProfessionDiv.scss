@@ -4,11 +4,6 @@
 {
   width: 60vw;
   height: 25vw;
-  border-radius: 2vw;
-  border: 0.15vw solid $WhiteA;
-  background: $Ultramarine_Blue;
-  box-shadow: none;
-  transition: 1s background, 1s box-shadow, 1s border;
   > img
   {
     width: 20vw;
@@ -35,13 +30,6 @@
       white-space: pre-line;
     }
   }
-}
-
-.ProfessionDiv:hover
-{
-  border: 0.15vw solid $White;
-  background: $Moderate_slate_blue;
-  box-shadow: 0 0 2vw 2vw $Moderate_slate_blueA;
 }
 
 .Left
