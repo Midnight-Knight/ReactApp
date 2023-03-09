@@ -22,6 +22,17 @@
     transform: rotate(360deg);
   }
 }
+.UnitedDiv {
+  background: rgb(32, 33, 79);
+  border: 0.15vw solid rgba(255, 255, 255, 0.5);
+  transition: 1s background, 1s border;
+}
+
+.UnitedDiv:hover {
+  background: rgb(123, 104, 238);
+  border: 0.15vw solid rgb(255, 255, 255);
+}
+
 .Div {
   width: 80vw;
   height: 35vw;
