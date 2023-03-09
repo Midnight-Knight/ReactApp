@@ -1,0 +1,14 @@
+.HeadDiv {
+  background: rgb(0, 0, 0);
+  width: 100vw;
+  height: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.HeadDiv > * {
+  color: rgb(255, 255, 255);
+}
+
+/*# sourceMappingURL=HeadDivs.css.map */

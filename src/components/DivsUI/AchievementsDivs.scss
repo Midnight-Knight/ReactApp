@@ -1,0 +1,18 @@
+@import "./../../style/Color_and_mixin";
+
+.AchievementsDivs
+{
+  @include FlexColumnSbCe();
+  width: 45vw;
+  height: 45vw;
+  border-radius: 2vw;
+  background: $Ultramarine_Blue;
+  border: 0.15vw solid $White;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+#Start
+{
+  margin-top: 15vw;
+}

@@ -1,6 +1,8 @@
 import React from "react";
 import "./Divs.css";
 import "./ProfessionDiv.css";
+import "./AchievementsDivs.css";
+import "./HeadDivs.css";
 import ReactLogo from "./../../Image/ReactLogo.png";
 import Frontend1 from "./../../Image/Frontend1.png";
 import Frontend2 from "./../../Image/Frontend2.png";
@@ -108,10 +110,28 @@ export const ProfessionDiv = () => {
     );
 };
 
+export const HeadDiv = () =>
+{
+    return (
+        <div className="HeadDiv">
+            <h3>Личные достижения</h3>
+        </div>
+    );
+};
+
 export const AchievementsDivs = () => {
-    let arr = []
+    let arr = [];
+    let len = 1;
     for (let i = 0; i < 1; ++i)
     {
+        let str = "";
+        switch (i)
+        {
+            case len:
+                break;
+            case 1:
+                break;
+        }
         arr.push(
             <div className="AchievementsDivs">
                 <div>

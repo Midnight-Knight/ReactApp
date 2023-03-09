@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"AchievementsDivs.css"}
+{"version":3,"sourceRoot":"","sources":["AchievementsDivs.scss","../../style/Color_and_mixin.scss"],"names":[],"mappings":"AAEA;ECmHE;EACA;EACA;EACA;EDnHA;EACA;EACA;EACA,YCNiB;EDOjB;EACA;EACA;;;AAGF;EAEE","file":"AchievementsDivs.css"}

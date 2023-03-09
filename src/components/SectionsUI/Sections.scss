@@ -20,9 +20,15 @@ section
   height: 82vw;
 }
 
-#FourthSection
+#FourthSection, #FifthSection
 {
   background: $Deep_purple-black;
   width: 100vw;
   @include FlexColumnFsFs();
 }
+
+#FifthSection
+{
+  @include FlexColumnCeCe();
+}
+

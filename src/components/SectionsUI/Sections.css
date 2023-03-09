@@ -18,13 +18,20 @@ section {
   height: 82vw;
 }
 
-#FourthSection {
+#FourthSection, #FifthSection {
   background: rgb(36, 9, 53);
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+#FifthSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=Sections.css.map */
