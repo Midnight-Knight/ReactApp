@@ -1,11 +1,6 @@
 .ProfessionDiv {
   width: 60vw;
   height: 25vw;
-  border-radius: 2vw;
-  border: 0.15vw solid rgba(255, 255, 255, 0.5);
-  background: rgb(32, 33, 79);
-  box-shadow: none;
-  transition: 1s background, 1s box-shadow, 1s border;
 }
 .ProfessionDiv > img {
   width: 20vw;
@@ -22,17 +17,8 @@
   margin: 1vw;
   transition: 1s transform;
 }
-.ProfessionDiv > div > * {
-  color: rgb(255, 255, 255);
-}
 .ProfessionDiv > div > p {
   white-space: pre-line;
-}
-
-.ProfessionDiv:hover {
-  border: 0.15vw solid rgb(255, 255, 255);
-  background: rgb(123, 104, 238);
-  box-shadow: 0 0 2vw 2vw rgba(123, 104, 238, 0.5);
 }
 
 .Left {
