@@ -126,23 +126,7 @@ export const HeadDiv = () =>
     }
     return (
         <div className="HeadDiv">
-            <div>
-                <div id="DivImageEd"></div>
-                <div id="DivTextEd">
-                    <h6>Деев Леонид Русланович</h6>
-                    <p>Университет: РТУ МИРЭА</p>
-                    <p>Факультет: Институт информационных технологий</p>
-                    <p>Курс: {year}</p>
-                </div>
-            </div>
-            <div>
-                <div id="DivAcademicRecord">
-                    <div id="FirstTerm"></div>
-                    <div id="SecondTerm"></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
+
         </div>
     );
 };

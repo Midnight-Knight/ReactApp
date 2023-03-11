@@ -1,7 +1,7 @@
 import React from "react";
 import "./Sections.css";
-import {DivName, DivReact, ProfessionDiv, AchievementsDivs, HeadDiv} from "../DivsUI/Divs";
-import {GridTechnologies} from "../GridsUI/Grids";
+import {DivName, DivReact, ProfessionDiv, AchievementsDivs} from "../DivsUI/Divs";
+import {GridTechnologies, GridEducation} from "../GridsUI/Grids";
 
 
 
@@ -40,7 +40,7 @@ export const FourthSection = () => {
 export const FifthSection = () => {
     return (
         <section id="FifthSection">
-            <HeadDiv/>
+            <GridEducation/>
         </section>
     );
 };

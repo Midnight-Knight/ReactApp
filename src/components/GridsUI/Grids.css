@@ -90,4 +90,50 @@
   background-image: url("./../../Image/android.png");
 }
 
+#GridEducation {
+  width: 90vw;
+  height: 70vw;
+  display: grid;
+  justify-content: space-between;
+  align-content: space-between;
+  grid-template-columns: repeat(4, 20vw);
+  grid-template-rows: repeat(3, 20vw);
+  grid-template-areas: "UniversityText StatisticsBlock PhotoUniversity PhotoUniversity" "UniversityText StatisticsBlock BlockText BlockText" "DevPhoto StatisticsBlock BlockText BlockText";
+}
+#GridEducation > div {
+  border-radius: 2vw;
+  border: 0.15vw solid rgba(255, 255, 255, 0.5);
+  background: rgb(32, 33, 79);
+  box-shadow: none;
+  transition: 1s border, 1s background, 1s box-shadow;
+}
+#GridEducation > .EduBlock:hover {
+  border: 0.15vw solid rgb(255, 255, 255);
+  background: rgb(123, 104, 238);
+  box-shadow: 0 0 2vw 2vw rgba(123, 104, 238, 0.5);
+}
+#GridEducation > #DevPhoto {
+  background: url("./../../Image/DogTwitter.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-area: DevPhoto;
+  border: 0.15vw solid rgb(255, 255, 255);
+}
+#GridEducation > #UniversityText {
+  grid-area: UniversityText;
+}
+#GridEducation > #BlockText {
+  grid-area: BlockText;
+}
+#GridEducation > #PhotoUniversity {
+  background: url("./../../Image/iit.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-area: PhotoUniversity;
+  border: 0.15vw solid rgb(255, 255, 255);
+}
+#GridEducation > #StatisticsBlock {
+  grid-area: StatisticsBlock;
+}
+
 /*# sourceMappingURL=Grids.css.map */

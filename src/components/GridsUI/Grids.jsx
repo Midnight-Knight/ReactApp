@@ -64,3 +64,15 @@ export const GridTechnologies = () => {
         </div>
     );
 };
+
+export const GridEducation = () => {
+    return(
+      <div id="GridEducation">
+          <div id="DevPhoto"></div>
+          <div id="UniversityText" className="EduBlock"></div>
+          <div id="BlockText" className="EduBlock"></div>
+          <div id="PhotoUniversity"></div>
+          <div id="StatisticsBlock" className="EduBlock"></div>
+      </div>
+    );
+};
