@@ -41,6 +41,13 @@ export const FifthSection = () => {
     return (
         <section id="FifthSection">
             <HeadDiv/>
+        </section>
+    );
+};
+
+export const SixthSection = () => {
+    return (
+        <section id="SixthSection">
             <AchievementsDivs/>
         </section>
     );

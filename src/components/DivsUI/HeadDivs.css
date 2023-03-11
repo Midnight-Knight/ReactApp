@@ -1,11 +1,40 @@
 .HeadDiv {
-  background: rgb(0, 0, 0);
-  width: 100vw;
-  height: 35vw;
+  width: 80vw;
+  height: 60vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.HeadDiv > div:nth-child(1) {
+  width: 80vw;
+  height: 30vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
+}
+.HeadDiv > div:nth-child(1) > * {
+  margin: 0.5vw 0;
+}
+.HeadDiv > div:nth-child(1) > #DivImageEd {
+  width: 25vw;
+  height: 25vw;
+  border-radius: 2vw;
+  border: 0.15vw solid rgb(255, 255, 255);
+  background: url("./../../Image/DogTwitter.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-right: 2.5vw;
+}
+.HeadDiv > div:nth-child(1) > #DivTextEd {
+  width: 50vw;
+  height: 30vw;
+  margin-left: 2.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 /*# sourceMappingURL=HeadDivs.css.map */

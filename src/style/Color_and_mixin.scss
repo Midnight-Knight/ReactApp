@@ -73,6 +73,14 @@ $WhiteA: rgba(255,255,255,0.5);
   align-items: flex-start;
 }
 
+@mixin FlexColumnFeFs()
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
 @mixin FlexColumnSeCe()
 {
   display: flex;

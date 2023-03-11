@@ -1,14 +1,18 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import "./Clock.css";
 
 
 export const Clock = () => {
     const [date, setDate] = useState(new Date());
-    async function Date1s() {
+    function Date1s() {
         setDate(new Date());
     }
 
-    setInterval(Date1s, 1000);
+
+    useEffect(() => {
+        const intervalID = setInterval(Date1s, 1000);
+        return () => clearInterval(intervalID);
+    }, [])
 
 
     return (

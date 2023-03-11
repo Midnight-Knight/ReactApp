@@ -4,23 +4,21 @@ section {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  width: 100vw;
 }
 
 #FirstSection, #SecondSection {
   background: rgb(36, 9, 53);
-  width: 100vw;
   height: 62vw;
 }
 
 #ThirdSection {
   background: rgb(0, 0, 0);
-  width: 100vw;
   height: 82vw;
 }
 
-#FourthSection, #FifthSection {
+#FourthSection {
   background: rgb(36, 9, 53);
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -28,10 +26,12 @@ section {
 }
 
 #FifthSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background: rgb(0, 0, 0);
+  height: 80vw;
+}
+
+#SixthSection {
+  background: rgb(36, 9, 53);
 }
 
 /*# sourceMappingURL=Sections.css.map */

@@ -4,31 +4,35 @@ section
 {
   @include FlexColumnCeCe();
   overflow: hidden;
+  width: 100vw;
 }
 
 #FirstSection, #SecondSection
 {
   background: $Deep_purple-black;
-  width: 100vw;
   height: 62vw;
 }
 
 #ThirdSection
 {
   background: $Black;
-  width: 100vw;
   height: 82vw;
 }
 
-#FourthSection, #FifthSection
+#FourthSection
 {
   background: $Deep_purple-black;
-  width: 100vw;
   @include FlexColumnFsFs();
 }
 
 #FifthSection
 {
-  @include FlexColumnCeCe();
+  background: $Black;
+  height: 80vw;
+}
+
+#SixthSection
+{
+  background: $Deep_purple-black;
 }
 

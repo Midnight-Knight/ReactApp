@@ -66,8 +66,8 @@ export const DivReact = () => {
 export const ProfessionDiv = () => {
     let arrImage = [Frontend1,Frontend2, Design, Game_Dev, Android_Dev];
     let arrH = [["Frontend разработчик","Фронтенд-разработчик создает динамический пользовательский интерфейс сайта, используя HTML, CSS, JavaScript, " +
-    "JS библиотеки и фреймворки. Он отвечает за отображение контента на экране и обеспечивает удобство использования для пользователя."],
-        ["HTML-верстальщик","HTML-верстальщик занимается созданием структуры сайта с помощью языка разметки HTML и таблицы каскадных стилей CSS. \n Он учитывает дизайн и функциональность, " +
+    "JS библиотеки и фреймворки. Он отвечает за отображение контента на экране и реализацию логики для клиентской части интернет ресурса."],
+        ["HTML-верстальщик","HTML-верстальщик занимается созданием структуры сайта с помощью языка разметки HTML и таблицы каскадных стилей CSS. Он учитывает дизайн и функциональность, " +
         "обеспечивает правильную работу сайта на различных устройствах и браузерах."],["Веб/Мобильный Дизайнер",""],["Игровой разработчик",""],["Android разработчик",""]];
     let arr = [];
     const size = 2;
@@ -113,9 +113,36 @@ export const ProfessionDiv = () => {
 
 export const HeadDiv = () =>
 {
+    let date = new Date();
+    let dateStart = new Date(2021, 9-1, 1);
+    let year = 0;
+    if (date.getMonth()+1 < dateStart.getMonth()+1)
+    {
+        year = date.getFullYear() - dateStart.getFullYear();
+    }
+    else
+    {
+        year = date.getFullYear() + 1 - dateStart.getFullYear();
+    }
     return (
         <div className="HeadDiv">
-            <h3>Личные достижения</h3>
+            <div>
+                <div id="DivImageEd"></div>
+                <div id="DivTextEd">
+                    <h6>Деев Леонид Русланович</h6>
+                    <p>Университет: РТУ МИРЭА</p>
+                    <p>Факультет: Институт информационных технологий</p>
+                    <p>Курс: {year}</p>
+                </div>
+            </div>
+            <div>
+                <div id="DivAcademicRecord">
+                    <div id="FirstTerm"></div>
+                    <div id="SecondTerm"></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
         </div>
     );
 };
