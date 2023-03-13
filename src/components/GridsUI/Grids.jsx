@@ -86,7 +86,9 @@ export const GridEducation = () => {
 
     return(
       <div id="GridEducation">
-          <div id="DevPhoto"></div>
+          <div id="DevPhoto">
+              <div></div>
+          </div>
           <div id="UniversityText" className="EduBlock">
               <ul>
                   <li>

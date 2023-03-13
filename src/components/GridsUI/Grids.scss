@@ -123,8 +123,8 @@
   display: grid;
   justify-content: space-between;
   align-content: space-between;
-  grid-template-columns: repeat(4, 20vw);
-  grid-template-rows: 20vw 15vw 26vw;
+  grid-template-columns: 25vw repeat(3, 20vw);
+  grid-template-rows: 25vw 15vw 26vw;
   grid-template-areas: "DevPhoto StatisticsBlock StatisticsBlock StatisticsBlock"
                       "UniversityText UniversityText UniversityText UniversityText"
                       "BlockText BlockText BlockText BlockText";
@@ -141,6 +141,26 @@
     grid-area: DevPhoto;
     border: 0.15vw solid $White;
     border-radius: 2vw;
+    transition: 1s transform;
+    overflow: hidden;
+    > div
+    {
+      position: relative;
+      background: rgba(0,0,0,0.6);
+      width: 100%;
+      height: 100%;
+      border-radius: 2vw;
+      @include blur(6px);
+      top: 100%;
+      transition: 1s top;
+    }
+  }
+  > #DevPhoto:hover
+  {
+    > div
+    {
+      top: 0%;
+    }
   }
   > #UniversityText
   {

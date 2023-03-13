@@ -96,8 +96,8 @@
   display: grid;
   justify-content: space-between;
   align-content: space-between;
-  grid-template-columns: repeat(4, 20vw);
-  grid-template-rows: 20vw 15vw 26vw;
+  grid-template-columns: 25vw repeat(3, 20vw);
+  grid-template-rows: 25vw 15vw 26vw;
   grid-template-areas: "DevPhoto StatisticsBlock StatisticsBlock StatisticsBlock" "UniversityText UniversityText UniversityText UniversityText" "BlockText BlockText BlockText BlockText";
 }
 #GridEducation > div {
@@ -110,6 +110,22 @@
   grid-area: DevPhoto;
   border: 0.15vw solid rgb(255, 255, 255);
   border-radius: 2vw;
+  transition: 1s transform;
+  overflow: hidden;
+}
+#GridEducation > #DevPhoto > div {
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 2vw;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  top: 100%;
+  transition: 1s top;
+}
+#GridEducation > #DevPhoto:hover > div {
+  top: 0%;
 }
 #GridEducation > #UniversityText {
   grid-area: UniversityText;
