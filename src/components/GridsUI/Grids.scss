@@ -119,29 +119,19 @@
 
 #GridEducation {
   width: 90vw;
-  height: 70vw;
+  height: 71vw;
   display: grid;
   justify-content: space-between;
   align-content: space-between;
   grid-template-columns: repeat(4, 20vw);
-  grid-template-rows: repeat(3, 20vw);
-  grid-template-areas: "UniversityText StatisticsBlock PhotoUniversity PhotoUniversity"
-                      "UniversityText StatisticsBlock BlockText BlockText"
-                      "DevPhoto StatisticsBlock BlockText BlockText";
+  grid-template-rows: 20vw 15vw 26vw;
+  grid-template-areas: "DevPhoto StatisticsBlock StatisticsBlock StatisticsBlock"
+                      "UniversityText UniversityText UniversityText UniversityText"
+                      "BlockText BlockText BlockText BlockText";
 
   > div
   {
-    border-radius: 2vw;
-    border: 0.15vw solid $WhiteA;
-    background: $Ultramarine_Blue;
     box-shadow: none;
-    transition: 1s border, 1s background, 1s box-shadow;
-  }
-  > .EduBlock:hover
-  {
-    border: 0.15vw solid $White;
-    background: $Moderate_slate_blue;
-    box-shadow: 0 0 2vw 2vw $Moderate_slate_blueA;
   }
   > #DevPhoto
   {
@@ -150,22 +140,54 @@
     background-position: center;
     grid-area: DevPhoto;
     border: 0.15vw solid $White;
+    border-radius: 2vw;
   }
   > #UniversityText
   {
     grid-area: UniversityText;
+    @include FlexRowSbCe();
+    > ul
+    {
+      > li
+      {
+        margin: 1vw 0;
+        height: 2vw;
+        list-style-type: none;
+        @include FlexRowFsCe();
+        > p
+        {
+          white-space: nowrap;
+          margin-left: 2vw;
+        }
+      }
+      > li:nth-child(1)
+      {
+        margin-top: 0;
+      }
+      > li:nth-child(5)
+      {
+        margin-bottom: 0;
+      }
+    }
+    > ul:nth-child(1)
+    {
+      transform: translateX(2vw);
+      > li:before
+      {
+        position: absolute;
+        transform: translateX(-2vw);
+        content: "";
+        width: 1vw;
+        height: 1vw;
+        border-radius: 1vw;
+        background: $Moderate_slate_blue;
+      }
+    }
   }
   > #BlockText
   {
     grid-area: BlockText;
-  }
-  > #PhotoUniversity
-  {
-    background: url("./../../Image/iit.jpg");
-    background-size: cover;
-    background-position: center;
-    grid-area: PhotoUniversity;
-    border: 0.15vw solid $White;
+    @include FlexColumnSbFs();
   }
   > #StatisticsBlock
   {

@@ -92,25 +92,16 @@
 
 #GridEducation {
   width: 90vw;
-  height: 70vw;
+  height: 71vw;
   display: grid;
   justify-content: space-between;
   align-content: space-between;
   grid-template-columns: repeat(4, 20vw);
-  grid-template-rows: repeat(3, 20vw);
-  grid-template-areas: "UniversityText StatisticsBlock PhotoUniversity PhotoUniversity" "UniversityText StatisticsBlock BlockText BlockText" "DevPhoto StatisticsBlock BlockText BlockText";
+  grid-template-rows: 20vw 15vw 26vw;
+  grid-template-areas: "DevPhoto StatisticsBlock StatisticsBlock StatisticsBlock" "UniversityText UniversityText UniversityText UniversityText" "BlockText BlockText BlockText BlockText";
 }
 #GridEducation > div {
-  border-radius: 2vw;
-  border: 0.15vw solid rgba(255, 255, 255, 0.5);
-  background: rgb(32, 33, 79);
   box-shadow: none;
-  transition: 1s border, 1s background, 1s box-shadow;
-}
-#GridEducation > .EduBlock:hover {
-  border: 0.15vw solid rgb(255, 255, 255);
-  background: rgb(123, 104, 238);
-  box-shadow: 0 0 2vw 2vw rgba(123, 104, 238, 0.5);
 }
 #GridEducation > #DevPhoto {
   background: url("./../../Image/DogTwitter.jpg");
@@ -118,19 +109,52 @@
   background-position: center;
   grid-area: DevPhoto;
   border: 0.15vw solid rgb(255, 255, 255);
+  border-radius: 2vw;
 }
 #GridEducation > #UniversityText {
   grid-area: UniversityText;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#GridEducation > #UniversityText > ul > li {
+  margin: 1vw 0;
+  height: 2vw;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+#GridEducation > #UniversityText > ul > li > p {
+  white-space: nowrap;
+  margin-left: 2vw;
+}
+#GridEducation > #UniversityText > ul > li:nth-child(1) {
+  margin-top: 0;
+}
+#GridEducation > #UniversityText > ul > li:nth-child(5) {
+  margin-bottom: 0;
+}
+#GridEducation > #UniversityText > ul:nth-child(1) {
+  transform: translateX(2vw);
+}
+#GridEducation > #UniversityText > ul:nth-child(1) > li:before {
+  position: absolute;
+  transform: translateX(-2vw);
+  content: "";
+  width: 1vw;
+  height: 1vw;
+  border-radius: 1vw;
+  background: rgb(123, 104, 238);
 }
 #GridEducation > #BlockText {
   grid-area: BlockText;
-}
-#GridEducation > #PhotoUniversity {
-  background: url("./../../Image/iit.jpg");
-  background-size: cover;
-  background-position: center;
-  grid-area: PhotoUniversity;
-  border: 0.15vw solid rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 #GridEducation > #StatisticsBlock {
   grid-area: StatisticsBlock;

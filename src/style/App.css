@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-size: 2vw;
+  font-size: 1.75vw;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
   transition: 1s background;
@@ -13,27 +13,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 3.25vw;
-}
-
-h2 {
   font-size: 3vw;
 }
 
-h3 {
+h2 {
   font-size: 2.75vw;
 }
 
-h4 {
+h3 {
   font-size: 2.5vw;
 }
 
-h5 {
+h4 {
   font-size: 2.25vw;
 }
 
-h6 {
+h5 {
   font-size: 2vw;
+}
+
+h6 {
+  font-size: 1.75vw;
 }
 
 button, button:active, button:focus {

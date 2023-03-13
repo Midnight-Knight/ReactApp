@@ -25,6 +25,14 @@ $WhiteA: rgba(255,255,255,0.5);
   align-items: center;
 }
 
+@mixin FlexRowFsFs()
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 @mixin FlexRowReverseFsCe()
 {
   display: flex;
