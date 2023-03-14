@@ -1,13 +1,17 @@
 @import "Color_and_mixin";
 
 body::-webkit-scrollbar {
-  position: relative;
-  width: auto;
+  width: 0.5vw;
 }
 
 html
 {
   overflow-y: overlay;
+}
+
+*{
+  scrollbar-width: auto;
+  scrollbar-color: $Moderate_slate_blue rgba(0,0,0,0);
 }
 
 body::-webkit-scrollbar-track{

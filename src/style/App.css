@@ -1,10 +1,14 @@
 body::-webkit-scrollbar {
-  position: relative;
-  width: auto;
+  width: 0.5vw;
 }
 
 html {
   overflow-y: overlay;
+}
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: rgb(123, 104, 238) rgba(0, 0, 0, 0);
 }
 
 body::-webkit-scrollbar-track {
