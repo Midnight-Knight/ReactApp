@@ -1,7 +1,7 @@
 @import "Color_and_mixin";
 
-body::-webkit-scrollbar {
-  width: 0.5vw;
+::-webkit-scrollbar {
+  width: 0.75vw;
 }
 
 html
@@ -9,21 +9,27 @@ html
   overflow-y: overlay;
 }
 
-*{
+html{
   scrollbar-width: auto;
   scrollbar-color: $Moderate_slate_blue rgba(0,0,0,0);
 }
 
-body::-webkit-scrollbar-track{
+::-webkit-scrollbar-track{
   background-color: rgba(0,0,0,0);
 }
 
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   width: auto;
   background-color: $Moderate_slate_blue;
   border-radius: 2vw;
 }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: $Moderate_slate_blueG;
+}
+
+
 
 * {
   padding: 0;
