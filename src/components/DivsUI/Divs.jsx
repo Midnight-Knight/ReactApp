@@ -77,19 +77,19 @@ export const ProfessionDiv = () => {
         switch (i%2)
         {
             case 0:
-                str += " Left";
+                str += " LeftProfession";
                 break;
             case 1:
-                str += " Right";
+                str += " RightProfession";
                 break;
         }
         switch (i)
         {
             case 0:
-                str += " Start";
+                str += " StartProfession";
                 break;
             case size-1:
-                str += " End";
+                str += " EndProfession";
                 break;
         }
         arr.push(
@@ -133,10 +133,19 @@ export const HeadDiv = () =>
 
 export const AchievementsDivs = () => {
     let arr = [];
-    let len = 1;
-    for (let i = 0; i < 1; ++i)
+    let len = 2;
+    for (let i = 0; i < len; ++i)
     {
         let str = "AchievementsDivs UnitedDiv";
+        switch (i%2)
+        {
+            case 0:
+                str += " LeftAchievements";
+                break;
+            case 1:
+                str += " RightAchievements";
+                break;
+        }
         switch (i)
         {
             case 0:

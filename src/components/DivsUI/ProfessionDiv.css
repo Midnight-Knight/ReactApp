@@ -27,7 +27,7 @@
   color: rgb(255, 255, 255);
 }
 
-.Left {
+.LeftProfession {
   margin-left: 15vw;
   margin-top: 5vw;
   margin-bottom: 5vw;
@@ -36,24 +36,24 @@
   justify-content: flex-start;
   align-items: center;
 }
-.Left > img {
+.LeftProfession > img {
   transform: translateX(-5vw);
 }
-.Left > div {
+.LeftProfession > div {
   transform: translateX(-5vw);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
-.Left > div > * {
+.LeftProfession > div > * {
   text-align: left;
 }
-.Left > img:hover + div {
+.LeftProfession > img:hover + div {
   transform: translateX(2.5vw);
 }
 
-.Right {
+.RightProfession {
   margin-left: 25vw;
   margin-top: 5vw;
   margin-bottom: 5vw;
@@ -62,28 +62,28 @@
   justify-content: flex-start;
   align-items: center;
 }
-.Right > img {
+.RightProfession > img {
   transform: translateX(5vw);
 }
-.Right > div {
+.RightProfession > div {
   transform: translateX(5vw);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
 }
-.Right > div > * {
+.RightProfession > div > * {
   text-align: right;
 }
-.Right > img:hover + div {
+.RightProfession > img:hover + div {
   transform: translateX(-2.5vw);
 }
 
-.Start {
+.StartProfession {
   margin-top: 20vw;
 }
 
-.End {
+.EndProfession {
   margin-bottom: 20vw;
 }
 

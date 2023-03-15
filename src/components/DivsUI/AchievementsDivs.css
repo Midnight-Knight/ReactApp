@@ -22,12 +22,12 @@
   text-align: center;
 }
 
-.Start {
-  margin-top: 15vw;
+.LeftAchievements {
+  margin-left: 15vw;
 }
 
-.End {
-  margin-bottom: 15vw;
+.RightAchievements {
+  margin-left: 40vw;
 }
 
 /*# sourceMappingURL=AchievementsDivs.css.map */

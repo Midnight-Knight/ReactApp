@@ -33,6 +33,7 @@ section
 
 #SixthSection
 {
+  @include FlexColumnFsFs();
   background: $Black;
 }
 
