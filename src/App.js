@@ -1,6 +1,6 @@
 import "./style/App.css";
 import {Header} from "./components/HeaderUI/Header";
-import {FirstSection,SecondSection,ThirdSection,FourthSection, FifthSection, SixthSection} from "./components/SectionsUI/Sections";
+import {FirstSection,SecondSection,ThirdSection,FourthSection, FifthSection, SixthSection, SeventhSection, EighthSection} from "./components/SectionsUI/Sections";
 
 function App() {
   return (
@@ -12,6 +12,8 @@ function App() {
       <FourthSection/>
       <FifthSection/>
       <SixthSection/>
+        <SeventhSection/>
+        <EighthSection/>
     </div>
   );
 }

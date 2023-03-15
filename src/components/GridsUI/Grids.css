@@ -163,7 +163,7 @@
   width: 1vw;
   height: 1vw;
   border-radius: 1vw;
-  background: rgb(123, 104, 238);
+  background: rgb(82, 0, 216);
 }
 #GridEducation > #BlockText {
   grid-area: BlockText;
@@ -173,10 +173,15 @@
   align-items: flex-start;
 }
 #GridEducation > #BlockText > p {
-  color: rgb(183, 183, 183);
+  color: rgb(175, 175, 175);
 }
 #GridEducation > #StatisticsBlock {
   grid-area: StatisticsBlock;
+}
+
+#GridPortfolio {
+  width: 100vw;
+  height: 100vw;
 }
 
 /*# sourceMappingURL=Grids.css.map */

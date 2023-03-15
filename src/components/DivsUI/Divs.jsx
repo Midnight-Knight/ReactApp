@@ -3,6 +3,7 @@ import "./Divs.css";
 import "./ProfessionDiv.css";
 import "./AchievementsDivs.css";
 import "./HeadDivs.css";
+import "./DivPortfolio.css"
 import ReactLogo from "./../../Image/ReactLogo.png";
 import Frontend1 from "./../../Image/Frontend1.png";
 import Frontend2 from "./../../Image/Frontend2.png";
@@ -86,10 +87,10 @@ export const ProfessionDiv = () => {
         switch (i)
         {
             case 0:
-                str += " StartProfession";
+                str += " Start";
                 break;
             case size-1:
-                str += " EndProfession";
+                str += " End";
                 break;
         }
         arr.push(
@@ -173,6 +174,25 @@ export const AchievementsDivs = () => {
                 return elem;
             })}
         </>
+    );
+};
+
+export const DivHeadPortfolio = () => {
+    return (
+        <div id="DivHeadPortfolio">
+            <h1>Мои проекты</h1>
+        </div>
+    );
+};
+
+export const DivButtonPortfolio = () => {
+    return (
+        <div id="DivButtonPortfolio">
+            <button>Frontend</button>
+            <button>Дизайн</button>
+            <button>GameDev</button>
+            <button>AndroidDev</button>
+        </div>
     );
 };
 

@@ -23,17 +23,15 @@
   }
 }
 .UnitedDiv {
-  background: rgb(32, 33, 79);
-  border: 0.15vw solid rgba(255, 255, 255, 0.5);
+  background: rgb(30, 27, 80);
   box-shadow: none;
-  transition: 1s background, 1s border, 1s box-shadow;
+  transition: 0.5s background, 0.5s box-shadow;
   border-radius: 2vw;
 }
 
 .UnitedDiv:hover {
-  background: rgb(123, 104, 238);
-  border: 0.15vw solid rgb(255, 255, 255);
-  box-shadow: 0 0 2vw 2vw rgba(123, 104, 238, 0.5);
+  background: rgb(82, 0, 216);
+  box-shadow: 0 0 2vw 2vw rgba(82, 0, 216, 0.5);
 }
 
 .Div {
@@ -51,7 +49,7 @@
   animation: startLeft 1.75s 1;
 }
 #Name > div:nth-child(1) {
-  background: rgb(32, 33, 79);
+  background: rgb(30, 27, 80);
   width: 45vw;
   height: 35vw;
   padding: 2.5% 5%;
@@ -122,7 +120,7 @@
   border-radius: 4vw;
   margin: 2vw;
   box-sizing: content-box;
-  border: 0.15vw solid rgb(32, 33, 79);
+  border: 0.15vw solid rgb(30, 27, 80);
   transition: 1s border, 1s transform;
 }
 #Name > div:nth-child(1) > div:nth-child(3) > a:nth-child(1) {
@@ -157,18 +155,18 @@
   position: absolute;
 }
 #Name > div:nth-child(2) > div:nth-child(1) {
-  background: linear-gradient(to right top, rgb(32, 33, 79) 50%, rgba(0, 0, 0, 0) 50%);
+  background: linear-gradient(to right top, rgb(30, 27, 80) 50%, rgba(0, 0, 0, 0) 50%);
   z-index: 2;
 }
 #Name > div:nth-child(2) > div:nth-child(2) {
-  background: linear-gradient(to right top, rgb(123, 104, 238) 50%, rgba(0, 0, 0, 0) 50%);
+  background: linear-gradient(to right top, rgb(82, 0, 216) 50%, rgba(0, 0, 0, 0) 50%);
   z-index: 3;
   opacity: 0;
   transition: 1s opacity;
 }
 
 #React {
-  background: rgb(32, 33, 79);
+  background: rgb(30, 27, 80);
   transition: 1s background, 1s box-shadow, 1s border;
   animation: startRight 1.75s 1;
 }
@@ -190,11 +188,11 @@
 }
 #React > div:nth-child(1) > div:nth-child(1) {
   z-index: 2;
-  background: linear-gradient(to left top, rgb(32, 33, 79) 50%, rgba(0, 0, 0, 0) 50%);
+  background: linear-gradient(to left top, rgb(30, 27, 80) 50%, rgba(0, 0, 0, 0) 50%);
 }
 #React > div:nth-child(1) > div:nth-child(2) {
   z-index: 3;
-  background: linear-gradient(to left top, rgb(123, 104, 238) 50%, rgba(0, 0, 0, 0) 50%);
+  background: linear-gradient(to left top, rgb(82, 0, 216) 50%, rgba(0, 0, 0, 0) 50%);
   opacity: 0;
   transition: 1s opacity;
 }
@@ -217,21 +215,21 @@
 }
 
 #Name:hover > div:nth-child(1) {
-  background: rgb(123, 104, 238);
+  background: rgb(82, 0, 216);
 }
 #Name:hover > div:nth-child(1) > div:nth-child(3) > a {
   border: 0.15vw solid rgb(255, 255, 255);
 }
 #Name:hover > div:nth-child(1) > div:nth-child(3) > a:hover {
   transform: scale(1.2);
-  border: 0.15vw solid rgb(36, 9, 53);
+  border: 0.15vw solid rgb(11, 8, 54);
 }
 #Name:hover > div:nth-child(2) > div:nth-child(2) {
   opacity: 1;
 }
 
 #React:hover {
-  background: rgb(123, 104, 238);
+  background: rgb(82, 0, 216);
 }
 #React:hover > div:nth-child(1) > div:nth-child(2) {
   opacity: 1;

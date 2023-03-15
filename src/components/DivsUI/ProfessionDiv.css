@@ -18,7 +18,7 @@
   transition: 1s transform;
 }
 .ProfessionDiv > div > p {
-  color: rgb(183, 183, 183);
+  color: rgb(175, 175, 175);
   white-space: pre-line;
   transition: 1s color;
 }
@@ -79,11 +79,11 @@
   transform: translateX(-2.5vw);
 }
 
-.StartProfession {
+.Start {
   margin-top: 20vw;
 }
 
-.EndProfession {
+.End {
   margin-bottom: 20vw;
 }
 

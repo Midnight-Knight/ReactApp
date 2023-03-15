@@ -144,3 +144,11 @@ export const GridEducation = () => {
       </div>
     );
 };
+
+export const GridPortfolio = () => {
+    return (
+        <div id="GridPortfolio">
+
+        </div>
+    );
+};

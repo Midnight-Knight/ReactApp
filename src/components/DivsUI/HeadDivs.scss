@@ -1,37 +1,54 @@
 @import "./../../style/Color_and_mixin";
 
-.HeadDiv
-{
+.HeadDiv {
   width: 80vw;
   height: 60vw;
   @include FlexColumnFsFs();
-> div:nth-child(1)
-{
-  width: 80vw;
-  height: 30vw;
-  @include FlexRowFsCe();
-  > *
-  {
-    margin: 0.5vw 0;
-  }
-  >#DivImageEd
-  {
-    width: 25vw;
-    height: 25vw;
-    border-radius: 2vw;
-    border: 0.15vw solid $White;
-    background: url("./../../Image/DogTwitter.jpg");
-    background-size: cover;
-    background-position: center;
-    margin-right: 2.5vw;
-  }
-  >#DivTextEd
-  {
-    width: 50vw;
-    height: 30vw;
-    margin-left: 2.5vw;
-    @include FlexColumnFeFs();
-  }
 
+  > div:nth-child(1) {
+    width: 80vw;
+    height: 30vw;
+    @include FlexRowFsCe();
+
+    > * {
+      margin: 0.5vw 0;
+    }
+
+    > #DivImageEd {
+      width: 25vw;
+      height: 25vw;
+      border-radius: 2vw;
+      border: 0.15vw solid $White;
+      background: url("./../../Image/DogTwitter.jpg");
+      background-size: cover;
+      background-position: center;
+      margin-right: 2.5vw;
+    }
+
+    > #DivTextEd {
+      width: 50vw;
+      height: 30vw;
+      margin-left: 2.5vw;
+      @include FlexColumnFeFs();
+    }
+  }
 }
+
+#DivHeadPortfolio
+{
+  height: 30vh;
+  @include FlexColumnSeCe();
+  > div
+  {
+    width: 60vw;
+    @include FlexRowSbCe();
+    > button
+    {
+      width: 12vw;
+      height: 4vw;
+      border-radius: 4vw;
+      background: $White;
+      color: $Black;
+    }
+  }
 }

@@ -1,0 +1,28 @@
+#DivButtonPortfolio {
+  height: 5vw;
+  width: 100vw;
+  background: rgb(11, 8, 54);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#DivButtonPortfolio > button {
+  width: 20vw;
+  height: 5vw;
+  background: rgb(11, 8, 54);
+  border-radius: 2vw 2vw 0 0;
+  border-top: 0.15vw solid rgba(0, 0, 0, 0);
+  border-right: 0.15vw solid rgba(0, 0, 0, 0);
+  border-left: 0.15vw solid rgba(0, 0, 0, 0);
+  border-bottom: none;
+  transition: 1s background, 1s border-top, 1s border-left, 1s border-right;
+}
+#DivButtonPortfolio > button:hover {
+  background: rgb(82, 0, 216);
+  border-top: 0.15vw solid rgb(255, 255, 255);
+  border-left: 0.15vw solid rgb(255, 255, 255);
+  border-right: 0.15vw solid rgb(255, 255, 255);
+}
+
+/*# sourceMappingURL=DivPortfolio.css.map */

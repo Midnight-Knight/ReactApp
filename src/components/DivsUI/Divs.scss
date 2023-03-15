@@ -37,16 +37,16 @@
 .UnitedDiv
 {
   background: $Ultramarine_Blue;
-  border: 0.15vw solid $WhiteA;
+
   box-shadow: none;
-  transition: 1s background, 1s border, 1s box-shadow;
+  transition: 0.5s background, 0.5s box-shadow;
   border-radius: 2vw;
 }
 
 .UnitedDiv:hover
 {
   background: $Moderate_slate_blue;
-  border: 0.15vw solid $White;
+
   box-shadow: 0 0 2vw 2vw $Moderate_slate_blueA;
 }
 

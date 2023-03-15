@@ -1,0 +1,28 @@
+@import "./../../style/Color_and_mixin";
+
+#DivButtonPortfolio
+{
+  height: 5vw;
+  width: 100vw;
+  background: $Deep_purple-black;
+  @include FlexRowSeCe();
+  > button
+  {
+    width: 20vw;
+    height: 5vw;
+    background: $Deep_purple-black;
+    border-radius: 2vw 2vw 0 0;
+    border-top: 0.15vw solid rgba(0,0,0,0);
+    border-right: 0.15vw solid rgba(0,0,0,0);
+    border-left: 0.15vw solid rgba(0,0,0,0);
+    border-bottom: none;
+    transition: 1s background, 1s border-top, 1s border-left, 1s border-right;
+  }
+  > button:hover
+  {
+    background: $Moderate_slate_blue;
+    border-top: 0.15vw solid $White;
+    border-left: 0.15vw solid $White;
+    border-right: 0.15vw solid $White;
+  }
+}

@@ -8,17 +8,17 @@ section {
 }
 
 #FirstSection, #SecondSection {
-  background: rgb(0, 0, 0);
+  background: rgb(11, 8, 54);
   height: 62vw;
 }
 
 #ThirdSection {
-  background: rgb(36, 9, 53);
+  background: rgb(0, 0, 0);
   height: 82vw;
 }
 
 #FourthSection {
-  background: rgb(0, 0, 0);
+  background: rgb(11, 8, 54);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -26,16 +26,24 @@ section {
 }
 
 #FifthSection {
-  background: rgb(36, 9, 53);
+  background: rgb(0, 0, 0);
   height: 81vw;
 }
 
 #SixthSection {
+  background: rgb(11, 8, 54);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+#SeventhSection {
   background: rgb(0, 0, 0);
+}
+
+#EighthSection {
+  background: rgb(82, 0, 216);
 }
 
 /*# sourceMappingURL=Sections.css.map */
