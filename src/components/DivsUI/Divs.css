@@ -31,7 +31,7 @@
 
 .UnitedDiv:hover {
   background: rgb(82, 0, 216);
-  box-shadow: 0 0 2vw 2vw rgba(82, 0, 216, 0.5);
+  box-shadow: 0 0 3vw 3vw rgba(82, 0, 216, 0.5);
 }
 
 .Div {

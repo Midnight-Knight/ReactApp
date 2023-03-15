@@ -18,7 +18,6 @@
     background-position: center;
     background-size: cover;
     transition: 1s opacity;
-    border: 0.15vw solid $White;
     overflow: hidden;
     border-radius: 2vw;
     > div
@@ -139,7 +138,6 @@
     background-size: cover;
     background-position: center;
     grid-area: DevPhoto;
-    border: 0.15vw solid $White;
     border-radius: 2vw;
     transition: 1s transform;
     overflow: hidden;

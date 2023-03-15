@@ -8,10 +8,9 @@ header
   height: 12vh;
   padding: 2vmin 8vmin;
   background: $Ultramarine_BlueA;
-  @include blur(6px);
+  @include blur(16px);
   box-shadow: none;
   z-index: 10;
-  border-bottom: 0.1vh solid $White;
   transition: 0.5s transform;
   > button
   {

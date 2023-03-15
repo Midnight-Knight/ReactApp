@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["DivPortfolio.scss","../../style/Color_and_mixin.scss"],"names":[],"mappings":"AAEA;EAEE;EACA;EACA,YCNkB;EAelB;EACA;EACA;EACA;;ADVA;EAEE;EACA;EACA,YCZgB;EDahB;EACA;EACA;EACA;EACA;EACA;;AAEF;EAEE,YClBkB;EDmBlB;EACA;EACA","file":"DivPortfolio.css"}
+{"version":3,"sourceRoot":"","sources":["DivPortfolio.scss","../../style/Color_and_mixin.scss"],"names":[],"mappings":"AAEA;EAEE;EACA;EACA,YCCM;EAQN;EACA;EACA;EACA;;ADVA;EAEE;EACA;EACA,YCZgB;EDahB;EACA;EACA;EACA;EACA;EACA;;AAEF;EAEE,YClBkB;EDmBlB;EACA;EACA","file":"DivPortfolio.css"}

@@ -9,7 +9,6 @@ section
 
 #FirstSection, #SecondSection
 {
-  background: $Deep_purple-black;
   height: 62vw;
 }
 
@@ -21,7 +20,6 @@ section
 
 #FourthSection
 {
-  background: $Deep_purple-black;
   @include FlexColumnFsFs();
 }
 
@@ -33,7 +31,6 @@ section
 
 #SixthSection
 {
-  background: $Deep_purple-black;
   @include FlexColumnFsFs();
 }
 
@@ -44,6 +41,6 @@ section
 
 #EighthSection
 {
-  background: $Moderate_slate_blue;
+  background-color: $Deep_purple-black;
 }
 

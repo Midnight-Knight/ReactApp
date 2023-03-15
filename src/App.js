@@ -5,7 +5,6 @@ import {FirstSection,SecondSection,ThirdSection,FourthSection, FifthSection, Six
 function App() {
   return (
     <div className="App">
-      <Header/>
       <FirstSection/>
       <SecondSection/>
       <ThirdSection/>

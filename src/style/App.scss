@@ -87,6 +87,11 @@ button, button:active, button:focus {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: $Black;
+  background-color: $Deep_purple-black;
+  background-position: center;
+  background-size: 100%;
+  background-image: url("./../Image/waves-dark.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   overflow: hidden;
 }

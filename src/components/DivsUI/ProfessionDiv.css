@@ -6,7 +6,6 @@
   width: 20vw;
   height: 20vw;
   border-radius: 2vw;
-  border: 0.15vw solid rgb(255, 255, 255);
   transition: 1s transform;
 }
 .ProfessionDiv > img:hover {

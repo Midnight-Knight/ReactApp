@@ -8,7 +8,6 @@ section {
 }
 
 #FirstSection, #SecondSection {
-  background: rgb(11, 8, 54);
   height: 62vw;
 }
 
@@ -18,7 +17,6 @@ section {
 }
 
 #FourthSection {
-  background: rgb(11, 8, 54);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -31,7 +29,6 @@ section {
 }
 
 #SixthSection {
-  background: rgb(11, 8, 54);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -43,7 +40,7 @@ section {
 }
 
 #EighthSection {
-  background: rgb(82, 0, 216);
+  background-color: rgb(11, 8, 54);
 }
 
 /*# sourceMappingURL=Sections.css.map */
