@@ -23,8 +23,18 @@
     transition: 1s transform;
     > p
     {
+      color: $Gray;
       white-space: pre-line;
+      transition: 1s color;
     }
+  }
+}
+
+.ProfessionDiv:hover
+{
+  > div > p
+  {
+    color: $White;
   }
 }
 

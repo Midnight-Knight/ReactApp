@@ -18,7 +18,13 @@
   transition: 1s transform;
 }
 .ProfessionDiv > div > p {
+  color: rgb(183, 183, 183);
   white-space: pre-line;
+  transition: 1s color;
+}
+
+.ProfessionDiv:hover > div > p {
+  color: rgb(255, 255, 255);
 }
 
 .Left {

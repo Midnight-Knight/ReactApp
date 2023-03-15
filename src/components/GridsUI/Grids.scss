@@ -208,6 +208,10 @@
   {
     grid-area: BlockText;
     @include FlexColumnSbFs();
+    > p
+    {
+      color: $Gray;
+    }
   }
   > #StatisticsBlock
   {
