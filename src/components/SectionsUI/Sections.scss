@@ -9,30 +9,30 @@ section
 
 #FirstSection, #SecondSection
 {
-  background: $Deep_purple-black;
+  background: $Black;
   height: 62vw;
 }
 
 #ThirdSection
 {
-  background: $Black;
+  background: $Deep_purple-black;
   height: 82vw;
 }
 
 #FourthSection
 {
-  background: $Deep_purple-black;
+  background: $Black;
   @include FlexColumnFsFs();
 }
 
 #FifthSection
 {
-  background: $Black;
+  background: $Deep_purple-black;
   height: 81vw;
 }
 
 #SixthSection
 {
-  background: $Deep_purple-black;
+  background: $Black;
 }
 

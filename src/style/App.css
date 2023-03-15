@@ -72,7 +72,7 @@ button, button:active, button:focus {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: rgb(36, 9, 53);
+  background: rgb(0, 0, 0);
   overflow: hidden;
 }
 
